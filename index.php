@@ -2,7 +2,7 @@
 use \Orion\v1\Web\Mvc\Modules\Classes;
 use \FcdAppsApis\Generic;
 
-ob_start();
+//ob_start();
 
 /* Load site configuation file... */
 require_once("config.php");
