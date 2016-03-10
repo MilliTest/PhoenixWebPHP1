@@ -20,7 +20,6 @@ if(version_compare(PHP_VERSION, "5.4.0", "<")) {
  *  Register autoloader for Orion PHP Classes.
  */
 spl_autoload_register(function ($class) {
-    echo $class;
     $prefix = "Orion\\v1\\";
 
     $class = trim($class, "\\");
@@ -32,6 +31,8 @@ spl_autoload_register(function ($class) {
 
     $class = substr($class, $len);
     $file = BASE_PATH . "\\" . $class . ".php";
+
+    echo $file . "<br />";
 
     if(file_exists($file)) {
         require_once($file);
