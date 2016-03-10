@@ -2,10 +2,18 @@
 use \Orion\v1\Web\Mvc\Modules\Classes;
 use \PhoenixWeb\Generic;
 
-//ob_start();
+ob_start();
 
 /* Load site configuation file... */
 require_once("config.php");
+
+/* Maintenance Mode */
+if(TRUE === $config['maintenance_mode']) {
+    header("HTTP/1.0 503 Server Unavailable");
+    exit("503 - Server Unavailable. Offline for Maintenance.");
+}
+
+
 define(BASE_PATH, $config['base_path']);
 require_once(BASE_PATH . "\\Orion\\v1\\Web\\Bootstrap\\init.php");
 

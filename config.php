@@ -5,6 +5,7 @@ if(mb_strtolower(trim($_SERVER['REQUEST_URI'], "/")) === "config.php") exit("Dir
 $config['base_path']          = "D:\home\site\wwwroot";
 $config['environment']        = "development";
 $config['time_zone']          = "UTC";
+$config['maintenance_mode']   = false;
 
 /* Log Configuration Values */
 $config['log_enabled']        = TRUE;
