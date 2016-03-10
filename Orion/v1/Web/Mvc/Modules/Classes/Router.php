@@ -77,13 +77,19 @@ namespace Orion\v1\Web\Mvc\Modules\Classes {
             if(FALSE !== strpos($uri, "?")) {
                 $uri = substr($uri, 0, strpos($uri, "?"));
             }
-            
-            foreach($this->_routes as $route => $options) {
-                if(preg_match($route, $uri)) {
-                    $this->_matches['controller'] = $options['controller'];
-                    $this->_matches['action'] = $options['action'];
-                    $this->_matches['webservice'] = $options['webservice'];
-                    break;
+
+            if(empty($uri)) {
+                $this->_matches['controller'] = "Home";
+                $this->_matches['action'] = "Index";
+                $this->_matches['webservice'] = false;
+            } else {               
+                foreach($this->_routes as $route => $options) {
+                    if(preg_match($route, $uri)) {
+                        $this->_matches['controller'] = $options['controller'];
+                        $this->_matches['action'] = $options['action'];
+                        $this->_matches['webservice'] = $options['webservice'];
+                        break;
+                    }
                 }
             }
 
