@@ -6,8 +6,8 @@ use \FcdAppsApis\Generic;
 
 /* Load site configuation file... */
 require_once("config.php");
-echo __DIR__;
-echo is_dir(__DIR__ . "Orion\\v1\\Web\\Bootstrap");
+$directory = __DIR__ . "\\Orion\\v1\\Web\\Bootstrap";
+echo is_dir($directory) . "<br />";
 //include_once("./Orion/v1/Web/Bootstrap/init.php");
 
 echo "Done!";
