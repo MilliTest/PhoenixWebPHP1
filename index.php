@@ -7,8 +7,7 @@ ob_start();
 /* Load site configuation file... */
 require_once("config.php");
 define("BASE_PATH", $config['base_path']);
-echo $_SERVER['DOCUMENT_ROOT'];
-require_once(BASE_PATH . "\\Orion\\v1\\Web\\Bootstrap\\init.php");
+require_once(BASE_PATH . "/Orion/v1/Web/Bootstrap/init.php");
 
 echo "Done!";
 //try {
