@@ -13,7 +13,7 @@ $config['log_threshold']      = 4;
 $config['log_date_format']    = "Y-m-d H:i:s";
 
 /* App Configuration Values */
-$config['app_directory']      = "FcdAppsApis";
+$config['app_directory']      = "PhoenixWeb";
 
 /* API Configuration Values */
 $config['is_api']             = TRUE;

@@ -17,14 +17,12 @@ if(mb_strtolower($config['environment']) === "development") {
 /* Add Polyfills for missing multibyte functions */
 require_once(BASE_PATH . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
 
-echo "here<br />";
+/* Set configured Time Zone or Default */
+date_default_timezone_set($config['time_zone']);
 
-///* Set configured Time Zone or Default */
-//date_default_timezone_set($config['time_zone']);
-
-///* Require Orion Autoloader */
-//require_once(BASE_PATH . "/Orion/v1/autoloader.php");
-//require_once(BASE_PATH . "/" . $config['app_directory'] . "/autoloader.php");
+/* Require Orion Autoloader */
+require_once(BASE_PATH . "\\Orion\\v1\\autoloader.php");
+require_once(BASE_PATH . "\\" . $config['app_directory'] . "\\autoloader.php");
 
 //// Initialize Config Class
 //$CONFIG = new Classes\Config($config);
