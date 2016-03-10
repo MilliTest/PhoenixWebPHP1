@@ -24,9 +24,9 @@ date_default_timezone_set($config['time_zone']);
 require_once(BASE_PATH . "\\Orion\\v1\\autoloader.php");
 require_once(BASE_PATH . "\\" . $config['app_directory'] . "\\autoloader.php");
 
-//// Initialize Config Class
-//$CONFIG = new Classes\Config($config);
-//unset($config);
+// Initialize Config Class
+$CONFIG = new Classes\Config($config);
+unset($config);
 
 //// Initialize Log Class
 //$LOG = new Classes\Log($CONFIG);
