@@ -6,7 +6,7 @@ ob_start();
 
 /* Load site configuation file... */
 require_once("config.php");
-//include_once("./Orion/v1/Web/Bootstrap/init.php");
+include_once("./Orion/v1/Web/Bootstrap/init.php");
 
 echo "Done!";
 //try {
