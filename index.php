@@ -1,6 +1,6 @@
 <?php
 use \Orion\v1\Web\Mvc\Modules\Classes;
-use \FcdAppsApis\Generic;
+use \PhoenixWeb\Generic;
 
 //ob_start();
 
@@ -22,8 +22,6 @@ try {
     $CONTROLLER = new $ctrl($CONFIG, $LOG);
 
     $BENCHMARK->set("end");
-
-    //echo Test\Core::factory();
 
     if(TRUE === $CONFIG->{"is_api"}) {
         $Response = new Generic\ApiResponse();

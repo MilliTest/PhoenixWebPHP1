@@ -31,7 +31,6 @@ spl_autoload_register(function ($class) {
 
     $file = BASE_PATH . "\\" . $class . ".php";
 
-    echo $file . "<br />";
     if(file_exists($file)) {
         require_once($file);
     }
