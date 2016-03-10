@@ -2,8 +2,6 @@
 if(mb_strtolower(trim($_SERVER['REQUEST_URI'], "/")) === "config.php") exit("Direct access to this file is not allowed.");
 
 /* Core Configuration Values */
-$config['base_path']          = __DIR__;
-$config['base_web_path']      = "/home/fcdadmin15/public_html/subdomains/api";
 $config['environment']        = "development";
 $config['time_zone']          = "UTC";
 
