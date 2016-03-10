@@ -6,16 +6,17 @@ use \FcdAppsApis\Generic;
 mb_internal_encoding("UTF-8");
 
 /* Liberal execution time... */
-@ini_set("max_execution_time", 300);
+ini_set("max_execution_time", 300);
 
-///* Add Polyfills for missing multibyte functions */
-//require_once(BASE_PATH . "/Orion/v1/Web/Helpers/mb_functions.php");
+/* Add Polyfills for missing multibyte functions */
+require_once(__DIR__ . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
 
-///* Set Error Reporting */
-//if(mb_strtolower($config['environment']) === "development") {
-//    error_reporting(E_ALL);
-//    ini_set("display_errors", 1);
-//}
+/* Set Error Reporting */
+if(mb_strtolower($config['environment']) === "development") {
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+}
+echo "here<br />";
 
 ///* Set configured Time Zone or Default */
 //date_default_timezone_set($config['time_zone']);
