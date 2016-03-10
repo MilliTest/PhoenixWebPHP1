@@ -30,8 +30,7 @@ spl_autoload_register(function ($class) {
     }
 
     $class = substr($class, $len);
-    $class = mb_str_replace("\\", "/", $class);
-    $file = __DIR__ . "/" . $class . ".php";
+    $file = BASE_PATH . "\\" . $class . ".php";
 
     if(file_exists($file)) {
         require_once($file);
