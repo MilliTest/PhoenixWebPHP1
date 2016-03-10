@@ -33,32 +33,3 @@ $LOG = new Classes\Log($CONFIG);
 
 $BENCHMARK = new Classes\Benchmark($CONFIG, $LOG);
 $BENCHMARK->set("start");
-
-// Are you using Orion in API Mode?
-if(TRUE === $CONFIG->{"is_api"}) {
-    switch($CONFIG->{"api_response_type"}) {
-        case "auto":
-            $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
-            switch ($extension) {
-                case "xml":
-                    header('Content-Type: text/xml');
-                    
-                    break;
-                case "json":
-                    header('Content-Type: application/json');
-                    break;
-                default:
-                // TODO: Implement type not supported exception.
-            }
-            break;
-        case "xml":
-            header('Content-Type: text/xml');
-            
-            break;
-        case "json":
-            header('Content-Type: application/json');
-            break;
-        default:
-        // TODO: Implement type not supported exception.
-    }
-}

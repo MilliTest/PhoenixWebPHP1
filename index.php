@@ -23,7 +23,34 @@ try {
 
     $BENCHMARK->set("end");
 
-    if(TRUE === $CONFIG->{"is_api"}) {
+    if(TRUE === $ROUTER->is_webservice()) {
+
+        switch($CONFIG->{"api_response_type"}) {
+            case "auto":
+                $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
+                switch ($extension) {
+                    case "xml":
+                        header('Content-Type: text/xml');
+                        
+                        break;
+                    case "json":
+                        header('Content-Type: application/json');
+                        break;
+                    default:
+                    // TODO: Implement type not supported exception.
+                }
+                break;
+            case "xml":
+                header('Content-Type: text/xml');
+                
+                break;
+            case "json":
+                header('Content-Type: application/json');
+                break;
+            default:
+            // TODO: Implement type not supported exception.
+        }
+
         $Response = new Generic\ApiResponse();
         $Response->message = "";
         $Response->code = 200;
@@ -72,7 +99,7 @@ try {
     $classname = get_class($e);
     $LOG->write_event("ERROR", substr($classname, strrpos($classname, "\\") + 1) . ": " . $e->getCode() . " - " . $e->getMessage(), $e);
 
-    if(TRUE === $CONFIG->{"is_api"}) {
+    if(TRUE === $ROUTER->is_webservice()) {
 
         $Response = new \FcdAppsApis\Generic\ApiResponse();
         $Response->message = $e->getMessage();

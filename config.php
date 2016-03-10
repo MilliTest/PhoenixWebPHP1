@@ -16,7 +16,6 @@ $config['log_date_format']    = "Y-m-d H:i:s";
 $config['app_directory']      = "PhoenixWeb";
 
 /* API Configuration Values */
-$config['is_api']             = TRUE;
 $config['api_response_type']  = "auto";
 
 /* Benchmark Configuration Values */
