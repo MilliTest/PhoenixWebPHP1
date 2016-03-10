@@ -2,11 +2,11 @@
 use \Orion\v1\Web\Mvc\Modules\Classes;
 use \FcdAppsApis\Generic;
 
-///* Set UTF-8 as default encoding... */
-//mb_internal_encoding("UTF-8");
+/* Set UTF-8 as default encoding... */
+mb_internal_encoding("UTF-8");
 
-///* Liberal execution time... */
-//ini_set("max_execution_time", 300);
+/* Liberal execution time... */
+@ini_set("max_execution_time", 300);
 
 ///* Add Polyfills for missing multibyte functions */
 //require_once(BASE_PATH . "/Orion/v1/Web/Helpers/mb_functions.php");
