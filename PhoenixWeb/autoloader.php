@@ -29,7 +29,6 @@ spl_autoload_register(function ($class) {
         return;
     }
 
-    $class = substr($class, $len);
     $file = BASE_PATH . "\\" . $class . ".php";
 
     if(file_exists($file)) {
