@@ -1,15 +1,16 @@
 <?php
-//use \Orion\v1\Web\Mvc\Modules\Classes;
-//use \FcdAppsApis\Generic;
+use \Orion\v1\Web\Mvc\Modules\Classes;
+use \FcdAppsApis\Generic;
 
-//ob_start();
+ob_start();
 
-///* Load site configuation file... */
-//require_once("config.php");
-//define("BASE_PATH", $config['base_path']);
+/* Load site configuation file... */
+require_once("config.php");
+define("BASE_PATH", $config['base_path']);
 
-//require_once(BASE_PATH . "/Orion/v1/Web/Bootstrap/init.php");
+require_once(BASE_PATH . "/Orion/v1/Web/Bootstrap/init.php");
 
+echo "Done!";
 //try {
 
 //    // Initialize Router
@@ -111,4 +112,3 @@
 //    exit;
 //}
 //ob_end_flush();
-echo realpath($_SERVER['DOCUMENT_ROOT']);
