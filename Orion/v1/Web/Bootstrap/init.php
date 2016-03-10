@@ -15,7 +15,7 @@ if(mb_strtolower($config['environment']) === "development") {
 }
 
 /* Add Polyfills for missing multibyte functions */
-require_once(__DIR__ . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
+require_once(BASE_PATH . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
 
 echo "here<br />";
 

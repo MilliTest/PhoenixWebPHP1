@@ -2,6 +2,7 @@
 if(mb_strtolower(trim($_SERVER['REQUEST_URI'], "/")) === "config.php") exit("Direct access to this file is not allowed.");
 
 /* Core Configuration Values */
+$config['base_path']          = "D:\home\site\wwwroot";
 $config['environment']        = "development";
 $config['time_zone']          = "UTC";
 
