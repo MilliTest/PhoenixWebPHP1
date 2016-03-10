@@ -82,6 +82,7 @@ namespace Orion\v1\Web\Mvc\Modules\Classes {
                 if(preg_match($route, $uri)) {
                     $this->_matches['controller'] = $options['controller'];
                     $this->_matches['action'] = $options['action'];
+                    $this->_matches['webservice'] = $options['webservice'];
                     break;
                 }
             }
