@@ -8,14 +8,15 @@ mb_internal_encoding("UTF-8");
 /* Liberal execution time... */
 ini_set("max_execution_time", 300);
 
-/* Add Polyfills for missing multibyte functions */
-//require_once(__DIR__ . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
-
 /* Set Error Reporting */
 if(mb_strtolower($config['environment']) === "development") {
     error_reporting(E_ALL);
     ini_set("display_errors", 1);
 }
+
+/* Add Polyfills for missing multibyte functions */
+require_once(__DIR__ . "\\Orion\\v1\\Web\\Helpers\\mb_functions.php");
+
 echo "here<br />";
 
 ///* Set configured Time Zone or Default */
