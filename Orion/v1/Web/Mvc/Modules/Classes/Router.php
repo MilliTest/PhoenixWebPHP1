@@ -108,7 +108,7 @@ namespace Orion\v1\Web\Mvc\Modules\Classes {
         }
 
         public function is_webservice() {
-            return (isset($this->_matches['webservice'])) ? $this->_matches['webservice'] : FALSE;
+            return ($this->_matches['webservice']) ? $this->_matches['webservice'] : FALSE;
         }
     
     }
