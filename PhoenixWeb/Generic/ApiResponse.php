@@ -8,7 +8,7 @@
  *  @date: 6 January 2016
  */
 
-namespace FcdAppsApis\Generic {
+namespace PhoenixWeb\Generic {
     
     final class ApiResponse {
 

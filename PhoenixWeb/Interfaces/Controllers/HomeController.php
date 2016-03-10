@@ -8,7 +8,7 @@
  *  @date: 6 January 2016
  */
 
-namespace FcdAppsApis\Interfaces\Controllers {
+namespace PhoenixWeb\Interfaces\Controllers {
     
     interface HomeController {
 

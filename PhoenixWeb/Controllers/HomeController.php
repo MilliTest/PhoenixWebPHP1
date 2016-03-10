@@ -8,12 +8,12 @@
  *  @date: 6 January 2016
  */
 
-namespace FcdAppsApis\Controllers {
+namespace PhoenixWeb\Controllers {
 
     use \Orion\v1\Web\Mvc\Core\Classes\BaseController;
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
     use \Orion\v1\Web\Mvc\Modules\Classes\Log;
-    use \FcdAppsApis\Interfaces\Controllers\HomeController as IHomeController;
+    use \PhoenixWeb\Interfaces\Controllers\HomeController as IHomeController;
     
     class HomeController extends BaseController implements IHomeController {
 

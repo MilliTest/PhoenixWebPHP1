@@ -8,7 +8,7 @@
  *  @date: 6 January 2016
  */
 
-namespace FcdAppsApis\Traits\Services {
+namespace PhoenixWeb\Traits\Services {
     
     trait UserServiceTrait {
 
