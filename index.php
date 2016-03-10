@@ -17,7 +17,7 @@ try {
     // Invoke Router
     $ROUTER->match_route();
 
-    $ctrl = "\\FcdAppsApis\\Controllers\\" . $ROUTER->get_controller() . "Controller";
+    $ctrl = "\\" . $CONFIG->{"app_directory"} . "\\Controllers\\" . $ROUTER->get_controller() . "Controller";
 
     $CONTROLLER = new $ctrl($CONFIG, $LOG);
 
