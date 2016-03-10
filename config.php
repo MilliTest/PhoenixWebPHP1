@@ -20,5 +20,5 @@ $config['app_directory']      = "PhoenixWeb";
 $config['api_response_type']  = "auto";
 
 /* Benchmark Configuration Values */
-$config['benchmark_enabled']  = TRUE;
+$config['benchmark_enabled']  = FALSE;
 $config['benchmark_decimals'] = 4;
