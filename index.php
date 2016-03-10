@@ -9,7 +9,7 @@ require_once("config.php");
 define(BASE_PATH, $config['base_path']);
 require_once(BASE_PATH . "\\Orion\\v1\\Web\\Bootstrap\\init.php");
 
-echo "Done!";
+echo "Done 2!";
 //try {
 
 //    // Initialize Router
