@@ -16,9 +16,9 @@ namespace Orion\v1\Web\Mvc\Core\Classes {
     
     abstract class BaseModel implements IBaseModel {
 
-        private $Config;
+        protected $Config;
         
-        private $Log;
+        protected $Log;
 
         public function __construct(Config $Config, Log $Log) {
             $this->Config = $Config;
