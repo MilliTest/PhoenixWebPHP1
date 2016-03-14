@@ -34,7 +34,7 @@ namespace PhoenixWeb\Controllers {
                     $this->Config,
                     $this->Log
                 );
-            //$this->ViewModel->render();
+            $this->ViewModel->render();
         }
     
     }
