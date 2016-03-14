@@ -16,6 +16,7 @@ if(TRUE === $config['maintenance_mode']) {
 
 define(BASE_PATH, $config['base_path']);
 require_once(BASE_PATH . "\\Orion\\v1\\Web\\Bootstrap\\init.php");
+require_once(BASE_PATH . "\\Razr\\autoloader.php");
 
 try {
 
