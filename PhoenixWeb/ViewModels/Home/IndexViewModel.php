@@ -18,6 +18,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
+            echo __DIR__ . "<br />";
             require_once("..\\..\\..\\Razr\\Engine.php");
             require_once("..\\..\\..\\Razr\\Loader\\FilesystemLoader.php");
             $razr = new Razr\Engine(new Razr\Loader\FilesystemLoader("..\\..\\Views"));
