@@ -18,6 +18,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
+            require_once("..\\..\\..\\Razr\\Engine.php")
         }
         
         public function __destruct() {
