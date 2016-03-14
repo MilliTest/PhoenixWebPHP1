@@ -8,18 +8,13 @@
  *  @date: 6 January 2016
  */
 
-namespace PhoenixWeb\Controllers {
+namespace PhoenixWeb\ViewModels\Home {
 
-    use \Orion\v1\Web\Mvc\Core\Classes\BaseController;
+    use \Orion\v1\Web\Mvc\Core\Classes\BaseViewModel;
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
     use \Orion\v1\Web\Mvc\Modules\Classes\Log;
-    use \PhoenixWeb\Interfaces\Controllers\HomeController as IHomeController;
     
-    class HomeController extends BaseController implements IHomeController {
-
-        private $Model;
-
-        private $ViewModel;
+    class IndexViewModel extends BaseViewModel {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
@@ -29,12 +24,8 @@ namespace PhoenixWeb\Controllers {
             parent::__destruct();
         }
 
-        public function ActionIndex() {
-            $this->ViewModel = new \PhoenixWeb\ViewModels\Home\IndexViewModel(
-                    $this->Config,
-                    $this->Log
-                );
-            $this->ViewModel->render();
+        public function render() {
+            echo "Ready.";
         }
     
     }
