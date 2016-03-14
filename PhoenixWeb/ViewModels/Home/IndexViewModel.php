@@ -18,7 +18,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
-            $razr = new Razr\Engine(new Razr\Loader\FilesystemLoader("..\\..\\Views"));
+            $razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader("..\\..\\Views"));
         }
         
         public function __destruct() {
