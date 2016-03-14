@@ -18,7 +18,6 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
-            echo __DIR__;
         }
         
         public function __destruct() {
@@ -26,7 +25,7 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            echo "Ready.";
+            echo __DIR__ . "Ready.";
         }
     
     }
