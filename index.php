@@ -93,7 +93,8 @@ try {
                 break;
         }
     } else {
-        $ctrl->{$ROUTER->get_action()};
+        //$ctrl->{$ROUTER->get_action()};
+        echo $ROUTER->get_action();
         $BENCHMARK->output_benchmark_suite_as_html();
     }
 
