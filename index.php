@@ -93,10 +93,7 @@ try {
                 break;
         }
     } else {
-        echo "<pre>";
-        print_r($CONTROLLER);
-        echo "</pre>";
-
+        $ctrl->{$ROUTER->get_action()};
         $BENCHMARK->output_benchmark_suite_as_html();
     }
 
