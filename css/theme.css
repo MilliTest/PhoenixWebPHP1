@@ -54,3 +54,19 @@
 #page-header > a {
     margin: 0;
 }
+#page-header nav ul {
+    list-style-type: none;
+}
+#page-header nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+#page-header nav ul li:first-child {
+    margin: 0;
+}
+#page-header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
