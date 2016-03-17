@@ -80,3 +80,10 @@
     top: 26px;
     left: 150px;
 }
+#page-header nav:last-of-type {
+
+}
+#page-header nav:last-of-type a {
+    padding: 0 7px;
+    color: #666;
+}
