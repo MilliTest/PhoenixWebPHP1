@@ -104,6 +104,11 @@ a {
 #page-footer .row:last-child p {
     text-align: center;
     font-size: 14px;
+    font-weight: 600;
+}
+#page-footer nav {
+    text-align: center;
+    padding: 5px 0;
 }
 #page-footer nav ul {
     list-style-type: none;
