@@ -15,6 +15,11 @@
                         <i class="fa fa-star highlight"></i>
                         @set( $counter-- )
                     @endwhile
+                    @set( $counter = (5 - $product.stars))
+                    @while( $counter > 0 )
+                        <i class="fa fa-star"></i>    
+                        @set( $counter-- )
+                    @endwhile
                     <span>(@( $product.reviews ))</span>
                 </p>
                 @else
