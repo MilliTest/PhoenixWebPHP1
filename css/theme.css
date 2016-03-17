@@ -5,7 +5,8 @@ li,
 a {
     line-height: 1.2em;
 }
-#page-header {
+#page-header,
+#page-content {
     width: 100%;
     display: block;
     position: relative;

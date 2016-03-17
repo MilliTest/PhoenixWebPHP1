@@ -36,8 +36,11 @@
     <div id="jumbotron">
 
     </div>
-    @block('contentblock')
-    <p>Parent Content</p>
-    @endblock
+    <main id="page-content">
+        <div class="container">
+            @block('contentblock')
+            @endblock
+        </div>
+    </main>
 </body>
 </html>
