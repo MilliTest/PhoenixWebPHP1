@@ -40,3 +40,11 @@ section h1 {
 #section-top-sellers .fa-star.highlight {
     color: #4cff00;
 }
+#coupon-block {
+    background: #efeee2;
+}
+#coupon-block div {
+    width: 1150px;
+    height: 300px;
+    margin: 25px;
+}

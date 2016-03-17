@@ -39,4 +39,9 @@
         @endforeach
     </ul>
 </section>
+<section id="coupon-block">
+    <div>
+
+    </div>
+</section>
 @endblock
