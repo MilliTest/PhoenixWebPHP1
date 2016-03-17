@@ -4,26 +4,13 @@
 <section id="section-top-sellers">
     <h1>Top sellers</h1>
     <ul>
+        @foreach($products as $product)
         <li>
             <div>
-
+                <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
             </div>
         </li>
-        <li>
-            <div>
-
-            </div>
-        </li>
-        <li>
-            <div>
-
-            </div>
-        </li>
-        <li>
-            <div>
-
-            </div>
-        </li>
+        @endforeach
     </ul>
 </section>
 @endblock
