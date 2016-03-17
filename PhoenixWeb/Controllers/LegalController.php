@@ -34,7 +34,11 @@ namespace PhoenixWeb\Controllers {
         }
 
         public function ActionTerms() {
-            echo "Ready.";
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Legal\TermsViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
         }
 
         public function ActionPrivacy() {
