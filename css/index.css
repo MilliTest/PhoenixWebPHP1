@@ -34,3 +34,9 @@ section h1 {
 .product-name {
     font-weight: 700;
 }
+#section-top-sellers .fa-star {
+    color: #ccc;
+}
+#section-top-sellers .fa-star.highlight {
+    color: #4cff00;
+}

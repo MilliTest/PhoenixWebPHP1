@@ -9,7 +9,14 @@
             <div>
                 <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
                 @if( $product.reviews > 0 )
-                <p></p>
+                <p>
+                    @set( $counter = $product.stars )
+                    @while( $counter > 0 )
+                        <i class="fa fa-star highlight"></i>
+                        @set( $counter-- )
+                    @endwhile
+                    <span>(@( $product.reviews ))</span>
+                </p>
                 @else
                 <p>
                     <i class="fa fa-star"></i>
