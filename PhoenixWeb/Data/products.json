@@ -5,7 +5,9 @@
     "price": "$299.99",
     "thumbnail": "XVenture-Pack-thumbnail",
     "stars": 5,
-    "reviews": 30
+    "reviews": 30,
+     "category": "packs",
+    "collection": "WildernessOne"
   },
   {
     "id":  2,
@@ -13,7 +15,9 @@
     "price": "$174.99",
     "thumbnail": "LeatherMaster-thumbnail",
     "stars": 4,
-    "reviews": 110
+    "reviews": 110,
+    "category": "footwear",
+    "collection": "WildernessOne"
   },
   {
     "id":  3,
@@ -21,7 +25,9 @@
     "price": "$1499.99",
     "thumbnail": "WayFinder-9000-thumbnail",
     "stars": 5,
-    "reviews":  3
+    "reviews": 3,
+    "category": "handheld devices",
+    "collection": "GeoTrak"
   },
   {
     "id": 4,
@@ -29,6 +35,8 @@
     "price": "$79.99",
     "thumbnail": "WharfPackJr-thumbnail",
     "stars": 0,
-    "reviews": 0
+    "reviews": 0,
+    "category": "packs",
+    "collection":  "OceanX"
   }
 ]

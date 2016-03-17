@@ -8,6 +8,9 @@
         <li>
             <div>
                 <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
+                <p></p>
+                <p>@( $product.name )</p>
+                <p>@( $product.price )</p>
             </div>
         </li>
         @endforeach
