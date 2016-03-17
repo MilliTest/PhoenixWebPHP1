@@ -44,8 +44,8 @@
     margin: 0;
     top: 15px;
 }
-#page-header > a,
-#page-header > nav {
+#page-header .container > a,
+#page-header .container > nav {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -71,5 +71,12 @@
     font-family: "Roboto", sans-serif;
     color: #333;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 15px;
+    border-left: 1px solid #333;
+}
+#page-header nav li:first-child a {
+    border: none;
+}
+#page-header nav a:hover {
+    text-decoration: underline;
 }
