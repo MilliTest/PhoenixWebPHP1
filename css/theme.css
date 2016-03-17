@@ -99,7 +99,7 @@ a {
     font-weight: 500;
 }
 #page-footer {
-    padding-top: 25px;
+    padding: 25px 0;
 }
 #page-footer .row:last-child p {
     text-align: center;
