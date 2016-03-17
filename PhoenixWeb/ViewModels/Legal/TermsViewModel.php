@@ -8,7 +8,7 @@
  *  @date: 6 January 2016
  */
 
-namespace PhoenixWeb\ViewModels\Home {
+namespace PhoenixWeb\ViewModels\Legal {
 
     use \Orion\v1\Web\Mvc\Core\Classes\BaseViewModel;
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
