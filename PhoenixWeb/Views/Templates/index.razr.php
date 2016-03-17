@@ -42,6 +42,7 @@
 <section id="coupon-block">
     <div>
         <h1>Save $20</h1>
+        <p>when you spend $100 or more</p>
     </div>
 </section>
 @endblock
