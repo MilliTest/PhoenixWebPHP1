@@ -29,6 +29,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function render() {
             $ViewData['title'] = "Peak Outdoor Adventure";
+            $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
                 "index"
             ];

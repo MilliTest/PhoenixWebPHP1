@@ -17,7 +17,7 @@
         <div class="container">
             <a href="/">
                 <img src="/imgs/peak-outdoor.png" alt="Peak Outdoor Logo" />
-                <h1>Peak Outdoor Adventure</h1>
+                <h1>Peak Outdoor Adventure Gear</h1>
             </a>
             <nav>
                 <ul>
@@ -46,7 +46,12 @@
         </div>
     </main>
     <footer id="page-footer">
-
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <p>&copy; @( $copyright ), Studio Web Productions. All rights reserved. </p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
