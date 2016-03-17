@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
+    <link type="text/css" rel="stylesheet" href="/css/theme.css" />
     <style>
         #page-header {
             width: 100%;
