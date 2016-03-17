@@ -16,9 +16,11 @@ namespace PhoenixWeb\ViewModels\Home {
     
     class IndexViewModel extends BaseViewModel {
 
+        private $razr;
+
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
-            $razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader("..\\..\\Views"));
+            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader("..\\..\\Views"));
         }
         
         public function __destruct() {
@@ -26,7 +28,7 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            echo "Ready.";
+            $this->razr->render('index.razr.php');
         }
     
     }
