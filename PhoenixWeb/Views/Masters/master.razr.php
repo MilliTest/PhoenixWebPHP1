@@ -5,25 +5,16 @@
     <title></title>
     <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" />
-    <style>
-        #page-header {
-            width: 100%;
-            height: 100px;
-        }
-        #page-nav {
-            width: 100%;
-            height: 40px;
-            background-color: #ccc;
-        }
-    </style>
 </head>
 <body>
     <header id="page-header">
+        <div class="container">
 
+        </div>
     </header>
-    <nav id="page-nav">
+    <div id="jumbotron">
 
-    </nav>
+    </div>
     @block('contentblock')
     <p>Parent Content</p>
     @endblock
