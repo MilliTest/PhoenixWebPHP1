@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title></title>
     <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" />
 </head>
 <body>

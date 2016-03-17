@@ -20,3 +20,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+#page-header a h1,
+#page-header a:link h1,
+#page-header a:active h1,
+#page-header a:visited h1 {
+    color: #333;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+}
