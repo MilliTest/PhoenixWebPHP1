@@ -51,8 +51,13 @@ section h1 {
     border: 2px solid #9f0808;
 }
 #coupon-block h1 {
-    font-size: 32px;
+    font-size: 40px;
     padding: 20px 0 10px;
     text-align: center;
     color: #9f0808;
+}
+#coupon-block p {
+    text-align: center;
+    color: #333;
+    font-size: 34px;
 }
