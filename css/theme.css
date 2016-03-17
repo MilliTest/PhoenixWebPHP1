@@ -98,6 +98,10 @@ a {
     padding: 0 7px;
     font-weight: 500;
 }
+#page-footer {
+    padding-top: 25px;
+}
 #page-footer .row:last-child p {
     text-align: center;
+    font-size: 12px;
 }
