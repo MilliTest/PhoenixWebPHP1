@@ -44,3 +44,13 @@
     margin: 0;
     top: 15px;
 }
+#page-header > a,
+#page-header > nav {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-left: -4px;
+}
+#page-header > a {
+    margin: 0;
+}

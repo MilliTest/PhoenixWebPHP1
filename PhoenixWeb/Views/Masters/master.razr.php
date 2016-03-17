@@ -5,6 +5,7 @@
     <title></title>
     <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron" />
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" />
 </head>
 <body>
@@ -14,6 +15,21 @@
                 <img src="/imgs/peak-outdoor.png" alt="Peak Outdoor Logo" />
                 <h1>Peak Outdoor Adventure</h1>
             </a>
+            <nav>
+                <ul>
+                    <li><a href="/shop">SHOP</a></li>
+                    <li><a href="/collections">COLLECTIONS</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>BLOG</li>
+                    <li>CART</li>
+                    <li>CART</li>
+                    <li>CART</li>
+                </ul>
+            </nav>
         </div>
     </header>
     <div id="jumbotron">
