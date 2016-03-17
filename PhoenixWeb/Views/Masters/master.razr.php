@@ -47,9 +47,20 @@
     </main>
     <footer id="page-footer">
         <div class="container">
-            <div class="row"></div>
             <div class="row">
-                <p>&copy; @( $copyright ), Studio Web Productions. All rights reserved. </p>
+                <nav>
+                    <ul>
+                        <li><a href="/legal/terms">Terms</a></li>
+                        <li><a href="/legal/privacy">Privacy</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="footer-social-icons">
+
+                </div>
+            </div>
+            <div class="row">
+                <p>&copy; @( $copyright ), Studio Web Productions. All rights reserved.</p>
             </div>
         </div>
     </footer>
