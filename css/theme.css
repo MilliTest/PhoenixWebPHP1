@@ -4,6 +4,7 @@ div,
 li,
 a {
     line-height: 1.2em;
+    font-family: "Abel", sans-serif;
 }
 #page-header,
 #page-content {
@@ -96,4 +97,7 @@ a {
 #page-header nav:last-of-type a {
     padding: 0 7px;
     font-weight: 500;
+}
+#page-footer .row:last-child p {
+    text-align: center;
 }
