@@ -34,7 +34,7 @@ namespace PhoenixWeb\ViewModels\Home {
                 "index"
             ];
             $ViewData['products'] = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
-            echo $this->razr->render('Templates\\index.razr.php', $ViewData);
+            echo $this->razr->render('Templates\\Home\\index.razr.php', $ViewData);
         }
     
     }
