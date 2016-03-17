@@ -43,6 +43,8 @@
     <div>
         <h1>Save $20</h1>
         <p>when you spend $100 or more</p>
+        <p>Use coupon code MARSALE16 at checkout March 10-17. Exclusions apply.</p>
+        <a href="/shop">Shop</a>
     </div>
 </section>
 @endblock
