@@ -8,37 +8,30 @@
  *  @date: 6 January 2016
  */
 
-namespace PhoenixWeb\Controllers {
+namespace PhoenixWeb\ViewModels\Home {
 
-    use \Orion\v1\Web\Mvc\Core\Classes\BaseController;
+    use \Orion\v1\Web\Mvc\Core\Classes\BaseViewModel;
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
     use \Orion\v1\Web\Mvc\Modules\Classes\Log;
     
-    class LegalController extends BaseController {
+    class TermsViewModel extends BaseViewModel {
 
-        private $Model;
-
-        private $ViewModel;
+        private $razr;
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
+            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader(__DIR__ . "\\..\\..\\Views"));
         }
         
         public function __destruct() {
             parent::__destruct();
         }
 
-        public function ActionIndex() {
-            header("Location: http://" . $this->Config->{"app_url"} . "/legal/terms");
-            exit;
-        }
-
-        public function ActionTerms() {
-            echo "Ready.";
-        }
-
-        public function ActionPrivacy() {
-            echo "Ready.";
+        public function render() {
+            $ViewData['title'] = "Terms | Peak Outdoor Adventure";
+            $ViewData['copyright'] = date("Y");
+            $ViewData['stylesheets'] = [];
+            echo $this->razr->render('Templates\\Legal\\terms.razr.php', $ViewData);
         }
     
     }
