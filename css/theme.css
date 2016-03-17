@@ -19,6 +19,8 @@
     background-image: url('/imgs/jumbotron.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 #page-header a h1,
 #page-header a:link h1,
@@ -26,15 +28,19 @@
 #page-header a:visited h1 {
     color: #333;
     font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
+    top: 30px;
+    left: 15px;
 }
 #page-header a img,
 #page-header a h1 {
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
+    position: relative;
 }
 #page-header a img {
     margin: 0;
+    top: 15px;
 }
