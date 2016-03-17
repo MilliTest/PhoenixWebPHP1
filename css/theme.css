@@ -14,7 +14,7 @@ a {
     height: 80px;
 }
 .container {
-    width: 1400px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -87,10 +87,10 @@ a {
     top: 26px;
 }
 #page-header nav:first-of-type {
-    left: 150px;
+    left: 225px;
 }
 #page-header nav:last-of-type {
-
+    left: 400px;
 }
 #page-header nav:last-of-type a {
     padding: 0 7px;
