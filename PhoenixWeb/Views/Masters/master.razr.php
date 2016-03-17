@@ -8,8 +8,8 @@
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel" />
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" />
-    @foreach($stylesheets as $stylesheet)
-        <link type="text/css" rel="stylesheet" href="/css/@( $stylesheet ).css" />
+    @foreach($stylesheets as $url)
+        <link type="text/css" rel="stylesheet" href="/css/@( $url ).css" />
     @endforeach
 </head>
 <body>
