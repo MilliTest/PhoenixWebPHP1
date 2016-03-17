@@ -46,7 +46,7 @@ section h1 {
 }
 #coupon-block div {
     width: 1100px;
-    height: 250px;
+    height: 200px;
     margin: 25px 0 25px 50px;
     border: 2px solid #9f0808;
 }
@@ -69,7 +69,7 @@ section h1 {
 }
 #coupon-block a {
     display: block;
-    margin: 0 auto;
+    margin: 15px auto 0;
     width: 150px;
     padding: 7px 10px;
     background: #9f0808;
@@ -77,4 +77,7 @@ section h1 {
     font-size: 26px;
     text-decoration: none;
     text-align: center;
+}
+#coupon-block a:hover {
+    background: red;
 }
