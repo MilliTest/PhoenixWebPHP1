@@ -28,7 +28,8 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            $this->razr->render('Templates\index.razr.php');
+            require_once("..\\..\\Views\\Templats\\index.razr.php");
+            //$this->razr->render('Templates\index.razr.php');
         }
     
     }
