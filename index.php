@@ -136,7 +136,8 @@ try {
                 break;
         }
     } else {
-        echo "A fatal error occurred and the script was terminated. See error log for more details.";
+        //echo "A fatal error occurred and the script was terminated. See error log for more details.";
+        echo $e->getMessage() . "<br />" . $e->getTraceAsString();
     }
     exit;
 }
