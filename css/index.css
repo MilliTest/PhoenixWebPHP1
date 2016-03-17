@@ -12,7 +12,15 @@ section h1 {
     display: inline-block;
     vertical-align: top;
     margin-left: -4px;
-    width: 25px;
-    height: 400px;
-    background: red;
+    width: 25%;
+    height: 300px;
+}
+#section-top-sellers li:first-of-type {
+    margin: 0;
+}
+#section-top-sellers li div {
+    width: 90%;
+    height: 250px;
+    margin: 25px auto 0;
+    background: green;
 }
