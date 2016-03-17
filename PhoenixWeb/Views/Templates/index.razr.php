@@ -7,7 +7,9 @@
         @foreach($products as $product)
         <li>
             <div>
-                <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
+                <a href="/shop/details/@( $product.id )">
+                    <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
+                </a>
                 @if( $product.reviews > 0 )
                 <p>
                     @set( $counter = $product.stars )

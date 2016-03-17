@@ -29,6 +29,9 @@ section h1 {
     width: 250px;
     height: 250px;
 }
+#section-top-sellers a img {
+    border: none;
+}
 #section-top-sellers div p {
     padding: 3px 0;
 }
