@@ -2,12 +2,15 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>@( $title )</title>
     <link type="text/css" rel="stylesheet" href="/css/reset.min.css" />
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron" />
     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel" />
     <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="/css/theme.css" />
+    @foreach($stylesheets as $stylesheet)
+        <link type="text/css" rel="stylesheet" href="/css/@( $stylesheet ).css" />
+    @endforeach
 </head>
 <body>
     <header id="page-header">
@@ -42,5 +45,8 @@
             @endblock
         </div>
     </main>
+    <footer id="page-footer">
+
+    </footer>
 </body>
 </html>

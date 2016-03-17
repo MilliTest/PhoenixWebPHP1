@@ -28,6 +28,10 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
+            $ViewData['title'] = "Peak Outdoor Adventure";
+            $ViewData['stylesheets'] = [
+                "index"
+            ];
             echo $this->razr->render('Templates\\index.razr.php');
         }
     
