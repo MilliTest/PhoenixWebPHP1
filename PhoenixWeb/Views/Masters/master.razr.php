@@ -16,10 +16,10 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="page-header">
 
     </header>
-    <nav>
+    <nav id="page-nav">
 
     </nav>
     @block('contentblock')
