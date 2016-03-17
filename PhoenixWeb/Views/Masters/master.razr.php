@@ -9,7 +9,10 @@
 <body>
     <header id="page-header">
         <div class="container">
-
+            <a href="/">
+                <img src="/imgs/peak-outdoor.png" alt="Peak Outdoor Logo" />
+                <h1>Peak Outdoor Adventure Equipment</h1>
+            </a>
         </div>
     </header>
     <div id="jumbotron">
