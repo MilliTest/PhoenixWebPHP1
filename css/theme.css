@@ -103,5 +103,22 @@ a {
 }
 #page-footer .row:last-child p {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
+}
+#page-footer nav ul {
+    list-style-type: none;
+}
+#page-footer li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+#page-footer li:first-of-type {
+    margin: 0;
+}
+#page-footer li a {
+    padding: 0 7px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
 }
