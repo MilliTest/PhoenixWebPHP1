@@ -28,7 +28,7 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            if(is_dir("..\\..\\Views\\Templates")) {
+            if(is_dir(__DIR__ . "..\\..\\Views\\Templates")) {
                 echo "Good!";
             } else {
                 echo __DIR__;
