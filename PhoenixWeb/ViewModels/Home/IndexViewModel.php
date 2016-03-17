@@ -32,7 +32,7 @@ namespace PhoenixWeb\ViewModels\Home {
             $ViewData['stylesheets'] = [
                 "index"
             ];
-            echo $this->razr->render('Templates\\index.razr.php');
+            echo $this->razr->render('Templates\\index.razr.php', $ViewData);
         }
     
     }
