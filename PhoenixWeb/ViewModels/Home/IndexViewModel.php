@@ -31,7 +31,7 @@ namespace PhoenixWeb\ViewModels\Home {
             if(is_dir("..\\..\\Views\\Templates")) {
                 echo "Good!";
             } else {
-                echo "Bad!";
+                echo __DIR__;
             }
             require_once("..\\..\\Views\\Templats\\index.razr.php");
             //$this->razr->render('Templates\index.razr.php');
