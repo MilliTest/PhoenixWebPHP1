@@ -28,10 +28,10 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            if(is_dir(__DIR__ . "..\\..\\Views\\Templates")) {
+            if(is_dir(__DIR__ . "\\..\\..\\Views\\Templates")) {
                 echo "Good!";
             } else {
-                echo __DIR__;
+                echo "Bad!<br />" . __DIR__ . "\\..\\..\\Views\\Templates<br />";
             }
             require_once("..\\..\\Views\\Templats\\index.razr.php");
             //$this->razr->render('Templates\index.razr.php');
