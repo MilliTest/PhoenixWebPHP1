@@ -30,7 +30,7 @@
     font-family: 'Orbitron', sans-serif;
     font-size: 22px;
     text-decoration: none;
-    top: 30px;
+    top: 25px;
     left: 15px;
 }
 #page-header a img,
@@ -42,7 +42,7 @@
 }
 #page-header a img {
     margin: 0;
-    top: 15px;
+    top: 10px;
 }
 #page-header .container > a,
 #page-header .container > nav {
