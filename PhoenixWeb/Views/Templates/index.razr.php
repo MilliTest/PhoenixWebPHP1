@@ -1,5 +1,7 @@
 @extend("Masters\\master.razr.php")
 
 @block('contentblock')
-<h1>Child Content!</h1>
+<section>
+    <h1>Top sellers</h1>
+</section>
 @endblock
