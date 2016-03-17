@@ -20,7 +20,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
-            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader(__DIR__ . "\\..\\..\\Views\\Templates"));
+            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader(__DIR__ . "\\..\\..\\Views"));
         }
         
         public function __destruct() {
