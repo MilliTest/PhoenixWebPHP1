@@ -1,1 +1,1 @@
-<p>Child content</p>
+@extend("Masters\\master.razr.php")
