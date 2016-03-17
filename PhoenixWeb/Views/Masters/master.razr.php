@@ -23,11 +23,11 @@
             </nav>
             <nav>
                 <ul>
-                    <li>ABOUT</li>
-                    <li>BLOG</li>
-                    <li>CART</li>
-                    <li>CART</li>
-                    <li>CART</li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/cart">CART</a></li>
+                    <li><a href="http://www.facebook.com">CART</a></li>
+                    <li><a href="http://www.twitter.com">CART</a></li>
                 </ul>
             </nav>
         </div>
