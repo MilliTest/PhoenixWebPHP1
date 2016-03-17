@@ -74,11 +74,11 @@
     display: inline-block;
     padding: 0 15px;
 }
-#page-header nav a:hover {
-    text-decoration: underline;
+#page-header nav:first-of-type,
+#page-header nav:last-of-type {
+    top: 26px;
 }
 #page-header nav:first-of-type {
-    top: 26px;
     left: 150px;
 }
 #page-header nav:last-of-type {
