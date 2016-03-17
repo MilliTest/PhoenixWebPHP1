@@ -61,3 +61,20 @@ section h1 {
     color: #333;
     font-size: 34px;
 }
+#coupon-block p:first-of-type {
+    font-weight: 700;
+}
+#coupon-block p:last-of-type {
+    font-size: 26px;
+}
+#coupon-block a {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    padding: 7px 10px;
+    background: #9f0808;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    text-align: center;
+}
