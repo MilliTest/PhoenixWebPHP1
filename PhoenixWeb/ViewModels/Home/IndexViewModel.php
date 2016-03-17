@@ -20,7 +20,7 @@ namespace PhoenixWeb\ViewModels\Home {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
-            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader("..\\..\\Views"));
+            $this->razr = new \Razr\Engine(new \Razr\Loader\FilesystemLoader(__DIR__ . "\\..\\..\\Views\\Templates"));
         }
         
         public function __destruct() {
@@ -28,13 +28,7 @@ namespace PhoenixWeb\ViewModels\Home {
         }
 
         public function render() {
-            if(is_dir(__DIR__ . "\\..\\..\\Views\\Templates")) {
-                echo "Good!";
-            } else {
-                echo "Bad!<br />" . __DIR__ . "\\..\\..\\Views\\Templates<br />";
-            }
-            require_once("..\\..\\Views\\Templats\\index.razr.php");
-            //$this->razr->render('Templates\index.razr.php');
+            $this->razr->render('Templates\index.razr.php');
         }
     
     }
