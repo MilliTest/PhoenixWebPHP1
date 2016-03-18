@@ -55,3 +55,17 @@ section h1 {
 #table-cart img {
     width: 200px;
 }
+#table-cart input[type="text"] {
+    width: 25px;
+    padding: 10px 15px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+#table-cart a[href="#"] {
+    color: #9f0808;
+    text-decoration: none;
+}
+#table-cart a[href="#"]:hover {
+    text-decoration: underline;
+}
