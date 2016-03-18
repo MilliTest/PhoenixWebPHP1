@@ -75,4 +75,5 @@ section h1 {
     position: relative;
     top: -1px;
     left: 171px;
+    cursor: pointer;
 }
