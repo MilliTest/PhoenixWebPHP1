@@ -22,7 +22,14 @@
             <nav>
                 <ul>
                     <li><a href="/shop">SHOP</a></li>
-                    <li><a href="/collections">COLLECTIONS</a></li>
+                    <li>
+                        <a href="#">COLLECTIONS</a>
+                        <ul>
+                            <li><a href="/shop/collections/wildernessone">WildernessOne</a></li>
+                            <li><a href="/shop/collections/geotrak">GeoTrak</a></li>
+                            <li><a href="/shop/collections/oceanx">OceanX</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
             <nav>
