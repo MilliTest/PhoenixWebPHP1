@@ -27,7 +27,7 @@
         $.post("/webservices/add", obj)
             .done(function (data) {
                 if (data.status) {
-                    alert("Item added to cart.");
+                    alert(data.message);
                 } else {
                     alert("An error occurred. Please submit the item again.");
                 }
