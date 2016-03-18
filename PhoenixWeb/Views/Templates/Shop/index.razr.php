@@ -8,6 +8,9 @@
             <div>
                 <select>
                     <option value="">CATEGORY</option>
+                    @foreach( $categories as $category )
+                    <option value="@( $category )">@( $category )</option>
+                    @endforeach
                 </select>
                 <select>
                     <option value="">COLLECTIONS</option>
