@@ -43,7 +43,7 @@ namespace PhoenixWeb\ViewModels\Shop {
                 foreach($products as $product) {
                     if($item['id'] === $product->id) {
                         $item['name'] = $product->name;
-                        $item['price'] = $product->thumbnail;
+                        $item['thumbnail'] = $product->thumbnail;
                         $item['price'] = $product->price;
                     }
                 }
