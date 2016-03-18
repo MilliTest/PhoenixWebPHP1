@@ -31,7 +31,7 @@ $routes['/shop'] = [
     "action"      => "Index",
     "webservice"  => false
 ];
-$routes['/shop/categories/(:alpha)'] = [
+$routes['/shop/categories/[A-Za-z\-]+'] = [
     "controller"  => "Shop",
     "action"      => "Category",
     "webservice"  => false

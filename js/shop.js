@@ -8,7 +8,7 @@
         } else {
             fragment = ("collections").toLowerCase();
         }
-        window.location = "/shop/" + fragment + "/" + value;
+        window.location = "/shop/" + fragment + "/" + (value).replace(' ', '-');
     });
 
 }(window, undefined, jQuery));
