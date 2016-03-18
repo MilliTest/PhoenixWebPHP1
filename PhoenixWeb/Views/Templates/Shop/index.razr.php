@@ -66,6 +66,6 @@
     </ul>
     @else
     <p>No results found.</p>
-    @endforeach
+    @endif
 </section>
 @endblock
