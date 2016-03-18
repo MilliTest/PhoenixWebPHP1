@@ -6,13 +6,13 @@
         <section id="section-filters">
             <h1>Everything</h1>
             <div>
-                <select>
+                <select id="dd-category">
                     <option value="">CATEGORY</option>
                     @foreach( $categories as $category )
                     <option value="@( $category )">@( $category )</option>
                     @endforeach
                 </select>
-                <select>
+                <select id="dd-collection">
                     <option value="">COLLECTIONS</option>
                     @foreach( $collections as $collection )
                         <option value="@( $collection )">@( $collection )</option>
