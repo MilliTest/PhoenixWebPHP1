@@ -36,7 +36,8 @@ namespace PhoenixWeb\ViewModels\Shop {
                 "details"
             ];
             $ViewData['javascript'] = [
-                "jquery"
+                "jquery",
+                "details"
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             foreach($products as $product) {
