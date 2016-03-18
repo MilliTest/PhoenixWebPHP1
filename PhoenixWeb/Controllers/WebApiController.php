@@ -81,7 +81,7 @@ namespace PhoenixWeb\Controllers {
                     $temp[] = $item;
                 }
             }
-            $_SESSION['cart'] = serialize($cart);
+            $_SESSION['cart'] = serialize($temp);
             echo json_encode([
                 "status"  => true,
                 "message" => "Item removed from cart."
