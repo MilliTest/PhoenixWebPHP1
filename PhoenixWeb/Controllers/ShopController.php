@@ -56,6 +56,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
+
+        public function ActionDetails() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\DetailsViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }

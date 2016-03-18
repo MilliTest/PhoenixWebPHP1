@@ -51,3 +51,8 @@ $routes['/shop/collections/(:alpha)'] = [
     "action"      => "Collection",
     "webservice"  => false
 ];
+$routes['/shop/details/(:num)'] = [
+    "controller"  => "Shop",
+    "action"      => "Details",
+    "webservice"  => false
+];
