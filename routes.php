@@ -26,3 +26,8 @@ $routes['/legal/privacy'] = array(
     "action"      => "Privacy",
     "webservice"  => false
 );
+$routes['/shop'] = array(
+    "controller"  => "Shop",
+    "action"      => "Index",
+    "webservice"  => false
+);
