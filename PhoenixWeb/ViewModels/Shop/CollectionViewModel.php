@@ -29,7 +29,7 @@ namespace PhoenixWeb\ViewModels\Shop {
 
         public function render() {
             $uri =  $_SERVER['REQUEST_URI'];
-            $ViewData['collection'] = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
+            $ViewData['search'] = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
