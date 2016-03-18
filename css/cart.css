@@ -22,7 +22,8 @@ section h1 {
     border: 1px solid #333;
     width: 100%;
 }
-#table-cart th {
+#table-cart th,
+#table-cart td {
     padding: 5px 7px;
     border-left: 1px solid #333;
 }
@@ -31,6 +32,10 @@ section h1 {
 #table-cart th:nth-of-type(5) {
     width: 100px;
     text-align: center;
+}
+#table-cart tbody tr {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 #form-add-to-cart button[type="submit"] {
     width: 150px;
