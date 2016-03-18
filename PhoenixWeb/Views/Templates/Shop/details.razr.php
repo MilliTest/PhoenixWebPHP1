@@ -17,6 +17,7 @@
     </div>
     <div class="details-block">
         <h1>@( $product.name )</h1>
+        <p>@( $product.price )</p>
     </div>
 </section>
 @endblock

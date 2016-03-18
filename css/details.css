@@ -33,3 +33,10 @@ section h1 {
 #section-details img {
     width: 500px;
 }
+#section-details h1 {
+    font-size: 28px;
+}
+#price {
+    font-size: 20px;
+    font-style: italic;
+}
