@@ -25,6 +25,7 @@
             id: parseInt($('input[type="hidden"]').val(), 10),
             qty: parseInt($('input[type="text"]').val(), 10)
         };
+        console.log(obj);
     });
 
 }(window, undefined, jQuery));
