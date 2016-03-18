@@ -1,33 +1,38 @@
 <?php
 if(mb_strtolower(trim($_SERVER['REQUEST_URI'], "/")) === "routes.php") exit("Direct access to this file is not allowed.");
 
-$routes['/contact'] = array(
+$routes['/contact'] = array[
     "controller"  => "Home",
     "action"      => "Contact",
     "webservice"  => false
-);
-$routes['/about'] = array(
+];
+$routes['/about'] = array[
     "controller"  => "Home",
     "action"      => "About",
     "webservice"  => false
-);
-$routes['/legal'] = array(
+];
+$routes['/legal'] = [
     "controller"  => "Legal",
     "action"      => "Index",
     "webservice"  => false
-);
-$routes['/legal/terms'] = array(
+];
+$routes['/legal/terms'] = [
     "controller"  => "Legal",
     "action"      => "Terms",
     "webservice"  => false
-);
-$routes['/legal/privacy'] = array(
+];
+$routes['/legal/privacy'] = [
     "controller"  => "Legal",
     "action"      => "Privacy",
     "webservice"  => false
-);
-$routes['/shop'] = array(
+];
+$routes['/shop'] = [
     "controller"  => "Shop",
     "action"      => "Index",
     "webservice"  => false
-);
+];
+$routes['/shop/categories/(:alpha)'] = [
+    "controller"  => "Shop",
+    "action"      => "Category",
+    "webservice"  => false
+];

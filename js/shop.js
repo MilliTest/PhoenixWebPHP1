@@ -4,9 +4,9 @@
         var value = $(this).val(),
             fragment = "";
         if ($(this).attr('id') === "dd-category") {
-            fragment = "categories";
+            fragment = ("categories").toLowerCase();
         } else {
-            fragment = "collections";
+            fragment = ("collections").toLowerCase();
         }
         window.location = "/shop/" + fragment + "/" + value;
     });
