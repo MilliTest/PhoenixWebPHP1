@@ -1,3 +1,8 @@
+#shop-filters-wrapper {
+    margin-top: -7px;
+    background: #fcfbe3;
+    border-bottom: 1px solid #333;
+}
 section {
     padding: 20px 0;
     margin: 7px 0;
