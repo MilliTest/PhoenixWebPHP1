@@ -53,7 +53,9 @@
         </tbody>
     </table>
     <div>
+        @if( !empty($cart) )
         <button type="button">Checkout</button>
+        @endif
     </div>
 </section>
 @endblock
