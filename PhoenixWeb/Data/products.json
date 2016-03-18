@@ -2,7 +2,7 @@
   {
     "id":  1,
     "name": "XVenture Mountain Pack",
-    "price": "$299.99",
+    "price": 299.99,
     "thumbnail": "XVenture-Pack-thumbnail",
     "stars": 5,
     "reviews": 30,
@@ -12,7 +12,7 @@
   {
     "id":  2,
     "name": "Leather Master",
-    "price": "$174.99",
+    "price": 174.99,
     "thumbnail": "LeatherMaster-thumbnail",
     "stars": 4,
     "reviews": 110,
@@ -22,7 +22,7 @@
   {
     "id":  3,
     "name": "WayFinder 9000",
-    "price": "$1499.99",
+    "price": 1499.99,
     "thumbnail": "WayFinder-9000-thumbnail",
     "stars": 5,
     "reviews": 3,
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Wharf Pack Jr",
-    "price": "$79.99",
+    "price": 79.99,
     "thumbnail": "WharfPackJr-thumbnail",
     "stars": 0,
     "reviews": 0,
