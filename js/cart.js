@@ -19,17 +19,27 @@
     })
     .on('click', 'a[href="#"]', function (evt) {
         evt.preventDefault();
-        var obj = {
-            id: parseInt($(this).prev().val(), 10),
-            qty: parseInt($(this).prev().prev().val(), 10)
-        };
-        $.post("/webservices/add", obj)
-            .done(function (data) {
-                window.location.reload();
-            })
-            .fail(function (data) {
-                alert("An error occurred. Please submit the item again.");
-            });
+        if (parseInt($(this).prev().prev().val(), 10) === 0) {
+            $.post("/webservices/remove", { id: parseInt($(this).prev().prev().val(), 10) })
+                .done(function (data) {
+                    window.location.reload();
+                })
+                .fail(function (data) {
+                    alert("An error occurred. Please submit the item again.");
+                });
+        } else {
+            var obj = {
+                id: parseInt($(this).prev().val(), 10),
+                qty: parseInt($(this).prev().prev().val(), 10)
+            };
+            $.post("/webservices/add", obj)
+                .done(function (data) {
+                    window.location.reload();
+                })
+                .fail(function (data) {
+                    alert("An error occurred. Please submit the item again.");
+                });
+        }
     });
 
 }(window, undefined, jQuery));
