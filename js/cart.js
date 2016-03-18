@@ -20,7 +20,7 @@
     .on('click', 'a[href="#"]', function (evt) {
         evt.preventDefault();
         if (parseInt($(this).prev().prev().val(), 10) === 0) {
-            $.post("/webservices/remove", { id: parseInt($(this).prev().prev().val(), 10) })
+            $.post("/webservices/remove", { id: parseInt($(this).prev().val(), 10) })
                 .done(function (data) {
                     window.location.reload();
                 })
