@@ -1,12 +1,12 @@
 <?php
 if(mb_strtolower(trim($_SERVER['REQUEST_URI'], "/")) === "routes.php") exit("Direct access to this file is not allowed.");
 
-$routes['/contact'] = array[
+$routes['/contact'] = [
     "controller"  => "Home",
     "action"      => "Contact",
     "webservice"  => false
 ];
-$routes['/about'] = array[
+$routes['/about'] = [
     "controller"  => "Home",
     "action"      => "About",
     "webservice"  => false
