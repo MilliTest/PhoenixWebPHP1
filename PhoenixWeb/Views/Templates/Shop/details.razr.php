@@ -27,7 +27,6 @@
                     <input type="text" name="qty" id="qty" value="1" />
                 </label>
             </form>
-
         </div>
     </div>
 </section>
