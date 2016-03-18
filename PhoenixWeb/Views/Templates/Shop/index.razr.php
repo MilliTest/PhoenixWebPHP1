@@ -8,11 +8,11 @@
             <div>
                 <select id="dd-category">
                     <option value="">CATEGORY</option>
-                    @foreach( $categories as $category )
-                        @if( mb_strtolower($category) !== "everything" && mb_strtolower($category) === mb_strtolower($category) )
-                        <option value="@( $category )" selected="selected">@( $category )</option>
+                    @foreach( $categories as $option )
+                        @if( mb_strtolower($category) !== "everything" && mb_strtolower($category) === mb_strtolower($option) )
+                        <option value="@( $option )" selected="selected">@( $option )</option>
                         @else
-                        <option value="@( $category )">@( $category )</option>
+                        <option value="@( $option )">@( $option )</option>
                         @endif
                     @endforeach
                 </select>
