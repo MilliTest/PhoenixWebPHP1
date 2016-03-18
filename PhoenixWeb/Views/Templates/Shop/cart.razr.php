@@ -24,7 +24,13 @@
         </thead>
         <tbody>
             @if( !empty($cart) )
-
+            <tr>
+                <td colspan="5">
+                    <pre>
+                        @( print_r($cart) )
+                    </pre>
+                </td>
+            </tr>
             @else
             <tr>
                 <td colspan="5">No items are currently in your cart.</td>
