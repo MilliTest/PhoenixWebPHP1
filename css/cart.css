@@ -86,4 +86,10 @@ section h1 {
     padding: 10px 15px;
     color: #fff;
     text-align: center;
+    width: 170px;
+    font-size: 20px;
+}
+#section-details button[type="button"]:hover {
+    background: red;
+    border: 1px solid red;
 }
