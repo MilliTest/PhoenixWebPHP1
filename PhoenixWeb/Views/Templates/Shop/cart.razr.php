@@ -52,5 +52,8 @@
             @endif
         </tbody>
     </table>
+    <div>
+        <button type="button">Checkout</button>
+    </div>
 </section>
 @endblock
