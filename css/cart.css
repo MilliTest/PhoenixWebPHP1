@@ -87,7 +87,7 @@ section h1 {
     color: #fff;
     text-align: center;
     width: 170px;
-    font-size: 20px;
+    font-size: 18px;
 }
 #section-details button[type="button"]:hover {
     background: red;
