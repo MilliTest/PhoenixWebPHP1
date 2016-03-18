@@ -31,9 +31,19 @@ $routes['/shop'] = [
     "action"      => "Index",
     "webservice"  => false
 ];
+$routes['/shop/categories'] = [
+    "controller"  => "Shop",
+    "action"      => "Redirect",
+    "webservice"  => false
+];
 $routes['/shop/categories/[A-Za-z\-]+'] = [
     "controller"  => "Shop",
     "action"      => "Category",
+    "webservice"  => false
+];
+$routes['/shop/collections'] = [
+    "controller"  => "Shop",
+    "action"      => "Redirect",
     "webservice"  => false
 ];
 $routes['/shop/collections/(:alpha)'] = [

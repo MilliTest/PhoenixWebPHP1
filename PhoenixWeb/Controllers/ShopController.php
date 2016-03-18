@@ -28,6 +28,11 @@ namespace PhoenixWeb\Controllers {
             parent::__destruct();
         }
 
+        public function ActionRedirect() {
+            header("Location: http://" . $this->Config->{"app_url"} . "/legal/terms");
+            exit;
+        }
+
         public function ActionIndex() {
             $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\IndexViewModel(
                     $this->Config,
