@@ -61,7 +61,7 @@ section h1 {
 #form-add-to-cart input[type="text"] {
     margin-left: 15px;
     padding: 5px 7px;
-    width: 15px;
+    width: 22px;
     text-align: center;
     font-weight: 400;
 }
@@ -74,6 +74,6 @@ section h1 {
     padding: 9px 10px;
     position: relative;
     top: -1px;
-    left: 171px;
+    left: 164px;
     cursor: pointer;
 }
