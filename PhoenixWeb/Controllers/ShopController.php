@@ -29,7 +29,7 @@ namespace PhoenixWeb\Controllers {
         }
 
         public function ActionRedirect() {
-            header("Location: http://" . $this->Config->{"app_url"} . "/legal/terms");
+            header("Location: http://" . $this->Config->{"app_url"} . "/shop");
             exit;
         }
 
