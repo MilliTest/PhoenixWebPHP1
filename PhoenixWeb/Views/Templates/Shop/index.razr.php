@@ -12,7 +12,7 @@
                         @if( mb_strtolower($search) !== "everything" && mb_strtolower($search) === mb_strtolower($category) )
                         <option value="@( $category )" selected="selected">@( $category )</option>
                         @else
-                        <option value="@( $option )">@( $option )</option>
+                        <option value="@( $category )">@( $category )</option>
                         @endif
                     @endforeach
                 </select>
