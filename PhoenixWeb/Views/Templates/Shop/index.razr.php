@@ -15,7 +15,7 @@
                 <select>
                     <option value="">COLLECTIONS</option>
                     @foreach( $collections as $collection )
-                        <option value="@( $collection )">@( $collection )<sup>&reg;</sup></option>
+                        <option value="@( $collection )">@( $collection )</option>
                     @endforeach
                 </select>
             </div>
