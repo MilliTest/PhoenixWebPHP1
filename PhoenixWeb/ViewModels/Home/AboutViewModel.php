@@ -31,7 +31,7 @@ namespace PhoenixWeb\ViewModels\Home {
             $ViewData['title'] = "About | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
-                "contact"    
+                "about"    
             ];
             echo $this->razr->render('Templates\\Home\\about.razr.php', $ViewData);
         }
