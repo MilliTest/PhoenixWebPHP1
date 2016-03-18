@@ -14,7 +14,7 @@ namespace PhoenixWeb\ViewModels\Home {
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
     use \Orion\v1\Web\Mvc\Modules\Classes\Log;
     
-    class ContactViewModel extends BaseViewModel {
+    class AboutViewModel extends BaseViewModel {
 
         private $razr;
 
