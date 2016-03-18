@@ -20,6 +20,32 @@
         <p id="price">$ @( $product.price )</p>
         <p>Category: @( $product.category )</p>
         <p>Collection: @( $product.collection )</p>
+        <p>
+            @if( $product.reviews > 0 )
+            <p>
+                @set( $counter = $product.stars )
+                @while( $counter > 0 )
+                    <i class="fa fa-star highlight"></i>
+                    @set( $counter-- )
+                @endwhile
+                @set( $counter = (5 - $product.stars))
+                @while( $counter > 0 )
+                    <i class="fa fa-star"></i>    
+                    @set( $counter-- )
+                @endwhile
+                <span>(@( $product.reviews ))</span>
+            </p>
+            @else
+            <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span>(0)</span>
+            </p>
+            @endif
+        </p>
         <div id="form-add-to-cart">
             <form name="add-to-cart" id="add-to-cart" method="post" action="/shop/details/@( $product.id )">
                 <input type="hidden" value="@( $product.id )" />

@@ -77,3 +77,9 @@ section h1 {
     left: 164px;
     cursor: pointer;
 }
+#section-details .fa-star {
+    color: #ccc;
+}
+#section-details .fa-star.highlight {
+    color: #4cff00;
+}
