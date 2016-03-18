@@ -6,6 +6,11 @@ $routes['/contact'] = array(
     "action"      => "Contact",
     "webservice"  => false
 );
+$routes['/about'] = array(
+    "controller"  => "Home",
+    "action"      => "About",
+    "webservice"  => false
+);
 $routes['/legal'] = array(
     "controller"  => "Legal",
     "action"      => "Index",

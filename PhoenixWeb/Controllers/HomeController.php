@@ -44,6 +44,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
+
+        public function ActionAbout() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Home\AboutViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }
