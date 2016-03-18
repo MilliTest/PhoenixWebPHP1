@@ -52,3 +52,6 @@ section h1 {
     left: 164px;
     cursor: pointer;
 }
+#table-cart img {
+    width: 200px;
+}
