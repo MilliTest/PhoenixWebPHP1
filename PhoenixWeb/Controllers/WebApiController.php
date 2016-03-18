@@ -38,6 +38,20 @@ namespace PhoenixWeb\Controllers {
             } else {
                 $cart = [];
             }
+            if(!empty($cart)) {
+                $id = intval(strip_tags($_POST['id']));
+                foreach($cart as $item) {
+                    if($item->id === $id) {
+                        $item->qty += intval(strip_tags($_POST['qty']));
+                        $_SESSION['cart'] = serialize($cart);
+                        echo json_encode([
+                            "status"  => true,
+                            "message" => "Item quantity updated."
+                        ]);
+                        exit;
+                    }
+                }
+            }
             $item = [
                 "id"  => intval(strip_tags($_POST['id'])),
                 "qty" => intval(strip_tags($_POST['qty']))
