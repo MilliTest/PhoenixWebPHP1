@@ -28,7 +28,7 @@
             <nav>
                 <ul>
                     <li><a href="/about">ABOUT</a></li>
-                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="#">BLOG</a></li>
                     <li><a href="/cart">CART</a></li>
                     <li><a href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
