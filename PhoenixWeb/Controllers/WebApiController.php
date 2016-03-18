@@ -42,7 +42,7 @@ namespace PhoenixWeb\Controllers {
                 $id = intval(strip_tags($_POST['id']));
                 foreach($cart as &$item) {
                     if($item['id'] === $id) {
-                        $item['id'] += intval(strip_tags($_POST['qty']));
+                        $item['qty'] += intval(strip_tags($_POST['qty']));
                         $_SESSION['cart'] = serialize($cart);
                         echo json_encode([
                             "status"  => true,
