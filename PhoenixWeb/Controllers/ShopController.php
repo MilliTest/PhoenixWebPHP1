@@ -48,6 +48,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
+
+        public function ActionCollection() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\CollectionViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }
