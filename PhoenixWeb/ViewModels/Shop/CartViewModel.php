@@ -31,7 +31,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             $ViewData['title'] = "Cart | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
-                "details"
+                "cart"
             ];
             $ViewData['javascript'] = [
                 "jquery",
