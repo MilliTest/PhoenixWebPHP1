@@ -19,7 +19,11 @@
                 <select id="dd-collection">
                     <option value="">COLLECTIONS</option>
                     @foreach( $collections as $collection )
+                        @if( mb_strtolower($search) !== "everything" && mb_strtolower($search) === mb_strtolower($collection) )
+                        <option value="@( $collection )" selected="selected">@( $collection )</option>
+                        @else
                         <option value="@( $collection )">@( $collection )</option>
+                        @endif
                     @endforeach
                 </select>
             </div>
