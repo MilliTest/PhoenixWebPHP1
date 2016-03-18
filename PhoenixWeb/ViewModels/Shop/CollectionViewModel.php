@@ -42,7 +42,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             foreach($products as $product) {
-                if(mb_strtolower($product->category) === mb_strtolower($ViewData['collection'])) {
+                if(mb_strtolower($product->collection) === mb_strtolower($ViewData['search'])) {
                     $ViewData['products'][] = $product;
                 }
             }

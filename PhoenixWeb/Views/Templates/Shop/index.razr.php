@@ -4,13 +4,13 @@
 <div id="shop-filters-wrapper">
     <div class="container">
         <section id="section-filters">
-            <h1>@( $category )</h1>
+            <h1>@( $search )</h1>
             <div>
                 <select id="dd-category">
                     <option value="">CATEGORY</option>
-                    @foreach( $categories as $option )
-                        @if( mb_strtolower($category) !== "everything" && mb_strtolower($category) === mb_strtolower($option) )
-                        <option value="@( $option )" selected="selected">@( $option )</option>
+                    @foreach( $categories as $category )
+                        @if( mb_strtolower($search) !== "everything" && mb_strtolower($search) === mb_strtolower($category) )
+                        <option value="@( $category )" selected="selected">@( $category )</option>
                         @else
                         <option value="@( $option )">@( $option )</option>
                         @endif

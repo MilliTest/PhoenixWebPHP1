@@ -29,7 +29,7 @@ namespace PhoenixWeb\ViewModels\Shop {
 
         public function render() {
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
-            $ViewData['category'] = "Everything";
+            $ViewData['search'] = "Everything";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
                 "index",
