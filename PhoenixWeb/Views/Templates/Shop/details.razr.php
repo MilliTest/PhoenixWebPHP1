@@ -20,6 +20,15 @@
         <p id="price">@( $product.price )</p>
         <p>Category: @( $product.category )</p>
         <p>Collection: @( $product.collection )</p>
+        <div id="form-add-to-cart">
+            <form name="add-to-cart" id="add-to-cart">
+                <label>
+                    Qty
+                    <input type="text" name="qty" id="qty" value="1" />
+                </label>
+            </form>
+
+        </div>
     </div>
 </section>
 @endblock
