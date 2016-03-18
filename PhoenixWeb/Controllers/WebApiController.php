@@ -76,7 +76,7 @@ namespace PhoenixWeb\Controllers {
             }
             $id = intval(strip_tags($_POST['id']));
             $temp = [];
-            foreach($cart as $item) {
+            foreach($cart as &$item) {
                 if($item['id'] !== $id) {
                     $temp[] = $item;
                 }
