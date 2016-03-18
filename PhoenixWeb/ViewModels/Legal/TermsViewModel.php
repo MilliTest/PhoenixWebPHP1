@@ -30,7 +30,9 @@ namespace PhoenixWeb\ViewModels\Legal {
         public function render() {
             $ViewData['title'] = "Terms | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
-            $ViewData['stylesheets'] = [];
+            $ViewData['stylesheets'] = [
+                "terms"    
+            ];
             echo $this->razr->render('Templates\\Legal\\terms.razr.php', $ViewData);
         }
     
