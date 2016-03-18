@@ -9,7 +9,7 @@
                 <select id="dd-category">
                     <option value="">CATEGORY</option>
                     @foreach( $categories as $category )
-                        @if( mb_strtolower($filter) !== "everything" && mb_strtolower($filter) === mb_strtolower($category) )
+                        @if( mb_strtolower($category) !== "everything" && mb_strtolower($category) === mb_strtolower($category) )
                         <option value="@( $category )" selected="selected">@( $category )</option>
                         @else
                         <option value="@( $category )">@( $category )</option>

@@ -14,7 +14,7 @@ namespace PhoenixWeb\ViewModels\Shop {
     use \Orion\v1\Web\Mvc\Modules\Classes\Config;
     use \Orion\v1\Web\Mvc\Modules\Classes\Log;
     
-    class CategoryViewModel extends BaseViewModel {
+    class CollectionViewModel extends BaseViewModel {
 
         private $razr;
 
@@ -29,7 +29,7 @@ namespace PhoenixWeb\ViewModels\Shop {
 
         public function render() {
             $uri =  $_SERVER['REQUEST_URI'];
-            $ViewData['category'] = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
+            $ViewData['collection'] = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
@@ -42,7 +42,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             foreach($products as $product) {
-                if(mb_strtolower($product->category) === mb_strtolower($ViewData['category'])) {
+                if(mb_strtolower($product->category) === mb_strtolower($ViewData['collection'])) {
                     $ViewData['products'][] = $product;
                 }
             }
