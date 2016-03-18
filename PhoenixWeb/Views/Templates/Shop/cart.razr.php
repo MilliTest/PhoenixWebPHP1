@@ -36,7 +36,7 @@
                         $ @( $item.price )
                     </td>
                     <td>
-                        <input type="text" name="qty" value="@( $item.qty )" />
+                        <input type="text" name="qty" value="@( $item.qty )" autocomplete="off" />
                         <input type="hidden" name="id" value="@( $item.id )" /> 
                         <a href="#" class="update-btn">Update</a>
                     </td>
