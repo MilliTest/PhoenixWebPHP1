@@ -72,5 +72,10 @@
             </div>
         </div>
     </footer>
+    @if( isset($javascript) && !empty($javascript) )
+        @foreach( $javascript as $url )
+        <script type="text/javascript" src="/js/@( $url ).js"></script>
+        @endforeach
+    @endif
 </body>
 </html>
