@@ -5,7 +5,8 @@
 }
 #terms-of-use h1,
 #terms-of-use p,
-#terms-of-use ul {
+#terms-of-use ul,
+#terms-of-use li {
     line-height: 1.2em;
     padding: 5px 0;
 }
@@ -14,4 +15,8 @@
 }
 #terms-of-use ul {
     list-style-type: square;
+    margin-left: 50px;
+}
+#terms-of-use span {
+    font-style: italic;
 }
