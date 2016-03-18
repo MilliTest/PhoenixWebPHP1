@@ -35,6 +35,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
+
+        public function ActionCategory() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\CategoryViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }
