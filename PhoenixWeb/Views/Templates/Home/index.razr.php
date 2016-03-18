@@ -35,7 +35,7 @@
                 </p>
                 @endif
                 <p class="product-name">@( $product.name )</p>
-                <p>@( $product.price )</p>
+                <p>$ @( $product.price )</p>
             </div>
         </li>
         @endforeach
