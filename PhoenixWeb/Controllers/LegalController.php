@@ -42,7 +42,11 @@ namespace PhoenixWeb\Controllers {
         }
 
         public function ActionPrivacy() {
-            echo "Ready.";
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Legal\PrivacyViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
         }
     
     }
