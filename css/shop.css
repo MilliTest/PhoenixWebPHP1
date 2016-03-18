@@ -7,6 +7,9 @@
 #section-filters {
     position: relative;
 }
+#section-filters h1 {
+    text-transform: capitalize;
+}
 #section-filters div {
     position: absolute;
     top: 15px;

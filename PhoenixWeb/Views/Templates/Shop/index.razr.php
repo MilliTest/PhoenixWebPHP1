@@ -4,7 +4,7 @@
 <div id="shop-filters-wrapper">
     <div class="container">
         <section id="section-filters">
-            <h1>Everything</h1>
+            <h1>@( $filter )</h1>
             <div>
                 <select id="dd-category">
                     <option value="">CATEGORY</option>
