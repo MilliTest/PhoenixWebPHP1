@@ -1,8 +1,10 @@
 @extend("Masters\\master.razr.php")
 
 @block('contentblock')
-<section id="section-top-sellers">
-    <h1>Top sellers</h1>
+<section id="section-filters">
+    <h1>Everything</h1>
+</section>
+<section id="section-shop">
     <ul>
         @foreach($products as $product)
         <li>

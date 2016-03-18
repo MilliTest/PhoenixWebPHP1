@@ -1,0 +1,46 @@
+section {
+    padding: 20px 0;
+    margin: 7px 0;
+}
+section h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+#section-shop ul {
+    list-style-type: none;
+}
+#section-shop li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+    width: 25%;
+    height: 350px;
+}
+#section-shop li:first-of-type {
+    margin: 0;
+}
+#section-shop li div {
+    width: 90%;
+    height: 250px;
+    margin: 25px auto 0;
+    font-size: 16px;
+}
+#section-shop li div img {
+    width: 250px;
+    height: 250px;
+}
+#section-shop a img {
+    border: none;
+}
+#section-shop div p {
+    padding: 3px 0;
+}
+.product-name {
+    font-weight: 700;
+}
+#section-shop .fa-star {
+    color: #ccc;
+}
+#section-shop .fa-star.highlight {
+    color: #4cff00;
+}
