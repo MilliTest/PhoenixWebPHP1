@@ -21,11 +21,13 @@
         <p>Category: @( $product.category )</p>
         <p>Collection: @( $product.collection )</p>
         <div id="form-add-to-cart">
-            <form name="add-to-cart" id="add-to-cart">
+            <form name="add-to-cart" id="add-to-cart" method="post" action="/shop/details/@( $product.id )">
+                <input type="hidden" value="@( $product.id )" />
                 <label>
                     Qty
                     <input type="text" name="qty" id="qty" value="1" />
                 </label>
+                <button type="submit">Add To Cart</button>
             </form>
         </div>
     </div>
