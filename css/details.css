@@ -33,3 +33,6 @@ section h1 {
 #section-details > div:last-of-type {
     width: 400px;
 }
+#section-details img {
+    width: 600px;
+}

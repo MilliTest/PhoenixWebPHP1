@@ -13,7 +13,7 @@
 @block('contentblock')
 <section id="section-details">
     <div class="details-block">
-
+         <img src="/imgs/products/@( $product.thumbnail ).jpg" alt="@( $product.name )" />
     </div>
     <div class="details-block">
         <h1>@( $product.name )</h1>
