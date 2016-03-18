@@ -35,7 +35,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             ];
             $ViewData['javascript'] = [
                 "jquery",
-                "details"
+                "cart"
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             $ViewData['cart'] = (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) ? unserialize($_SESSION['cart']) : [];
