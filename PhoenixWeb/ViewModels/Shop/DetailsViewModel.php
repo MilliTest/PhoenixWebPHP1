@@ -33,12 +33,10 @@ namespace PhoenixWeb\ViewModels\Shop {
             $ViewData['title'] = "Product Details | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
-                "index",
-                "shop"
+                "details"
             ];
             $ViewData['javascript'] = [
-                "jquery",
-                "shop"    
+                "jquery"
             ];
             echo $this->razr->render('Templates\\Shop\\details.razr.php', $ViewData);
         }

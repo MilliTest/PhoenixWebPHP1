@@ -1,0 +1,20 @@
+#shop-filters-wrapper {
+    background: #fcfbe3;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    position: relative;
+}
+#section-filters {
+    position: relative;
+}
+#section-filters h1 {
+    text-transform: capitalize;
+}
+section {
+    padding: 20px 0;
+    margin: 7px 0;
+}
+section h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
