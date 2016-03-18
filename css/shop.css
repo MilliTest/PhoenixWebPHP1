@@ -2,6 +2,10 @@
     margin-top: -7px;
     background: #fcfbe3;
     border-bottom: 1px solid #333;
+    position: relative;
+}
+#section-filters {
+    position: relative;
 }
 section {
     padding: 20px 0;
