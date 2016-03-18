@@ -40,7 +40,7 @@ namespace PhoenixWeb\Controllers {
             }
             if(!empty($cart)) {
                 $id = intval(strip_tags($_POST['id']));
-                foreach($cart as $item) {
+                foreach($cart as &$item) {
                     if($item['id'] === $id) {
                         $item['id'] += intval(strip_tags($_POST['qty']));
                         $_SESSION['cart'] = serialize($cart);
