@@ -66,3 +66,8 @@ $routes['/webservices/add'] = [
     "action"      => "Add",
     "webservice"  => true
 ];
+$routes['/webservices/remove'] = [
+    "controller"  => "WebApi",
+    "action"      => "Remove",
+    "webservice"  => true
+];

@@ -63,6 +63,30 @@ namespace PhoenixWeb\Controllers {
                 "message" => "Item added to cart."
             ]);
         }
+
+        public function ActionRemove() {
+            if(isset($_SESSION['cart'])) {
+                $cart = unserialize($_SESSION['cart']);
+            } else {
+                echo json_encode([
+                    "status"  => true,
+                    "message" => "Your cart is empty."
+                ]);
+                exit;
+            }
+            $id = intval(strip_tags($_POST['id']));
+            $temp = [];
+            foreach($cart as $item) {
+                if($item['id'] !== $id) {
+                    $temp[] = $item;
+                }
+            }
+            $_SESSION['cart'] = serialize($cart);
+            echo json_encode([
+                "status"  => true,
+                "message" => "Item removed from cart."
+            ]);
+        }
     }
 
 }
