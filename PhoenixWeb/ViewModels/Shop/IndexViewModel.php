@@ -31,6 +31,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
+                "index",
                 "shop"
             ];
             $ViewData['products'] = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
