@@ -27,7 +27,7 @@
                 @foreach($cart as $item)
                 <tr>
                     <td>
-
+                        <img src="/imgs/products/@( $item.thumbnail ).jpg" alt="@( $item.name )" />
                     </td>
                     <td>
                         @( $item.name )
