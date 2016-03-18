@@ -12,7 +12,7 @@
 
 @block('contentblock')
 <section id="section-details">
-    <table id="cart-table">
+    <table id="table-cart">
         <thead>
             <tr>
                 <th>Thumbnail</th>
