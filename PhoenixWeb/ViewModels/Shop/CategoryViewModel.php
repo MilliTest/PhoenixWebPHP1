@@ -28,6 +28,8 @@ namespace PhoenixWeb\ViewModels\Shop {
         }
 
         public function render() {
+            $uri =  $_SERVER['REQUEST_URI'];
+            $category = substr($uri, strrpos($uri, "/") + 1);
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
@@ -38,12 +40,17 @@ namespace PhoenixWeb\ViewModels\Shop {
                 "jquery",
                 "shop"    
             ];
-            $ViewData['products'] = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
-            foreach($ViewData['products'] as $product) {
+            $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
+            foreach($products as $product) {
+                if(mb_strtolower($product->category) === $category) {
+                    $ViewData['products'][] = $product;
+                }
+            }
+            foreach($products as $product) {
                 $ViewData['categories'][] = $product->category;
             }
             $ViewData['categories'] = array_unique($ViewData['categories']);
-            foreach($ViewData['products'] as $product) {
+            foreach($products as $product) {
                 $ViewData['collections'][] = $product->collection;
             }
             $ViewData['collections'] = array_unique($ViewData['collections']);

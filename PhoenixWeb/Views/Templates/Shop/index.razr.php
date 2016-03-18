@@ -26,6 +26,7 @@
 
 @block('contentblock')
 <section id="section-shop">
+    @if( isset($products) && !empty($products) )
     <ul>
         @foreach($products as $product)
         <li>
@@ -63,5 +64,8 @@
         </li>
         @endforeach
     </ul>
+    @else
+    <p>No results found.</p>
+    @endforeach
 </section>
 @endblock
