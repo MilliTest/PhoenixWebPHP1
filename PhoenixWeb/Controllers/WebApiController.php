@@ -30,6 +30,8 @@ namespace PhoenixWeb\Controllers {
             parent::__destruct();
         }
 
+        public function ActionIndex() {}
+
         public function ActionAdd() {
             if(isset($_SESSION['cart'])) {
                 $cart = unserialize($_SESSION['cart']);
