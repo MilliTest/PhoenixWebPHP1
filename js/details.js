@@ -20,12 +20,21 @@
 
     $('form').on('submit', function (evt) {
         evt.preventDefault();
-        alert("submitted");
         var obj = {
             id: parseInt($('input[type="hidden"]').val(), 10),
             qty: parseInt($('input[type="text"]').val(), 10)
         };
-        console.log(obj);
+        $.post("/webservices/add", obj)
+            .done(function (data) {
+                if (data.status) {
+                    alert("Item added to cart.");
+                } else {
+                    alert("An error occurred. Please submit the item again.");
+                }
+            })
+            .fail(function (data) {
+                alert("An error occurred. Please submit the item again.");
+            });
     });
 
 }(window, undefined, jQuery));
