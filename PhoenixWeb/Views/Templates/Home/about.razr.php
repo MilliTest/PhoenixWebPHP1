@@ -39,7 +39,9 @@
     <div id="jumbotron"></div>
     <main id="page-content">
         <div class="container">
-            <h1>About</h1>
+            <section>
+                <h1>About</h1>
+            </section>
         </div>
     </main>
     <footer id="page-footer">
