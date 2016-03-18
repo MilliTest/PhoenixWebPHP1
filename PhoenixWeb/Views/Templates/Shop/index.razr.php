@@ -5,6 +5,14 @@
     <div class="container">
         <section id="section-filters">
             <h1>Everything</h1>
+            <div>
+                <select>
+                    <option value="">CATEGORY</option>
+                </select>
+                <select>
+                    <option value="">COLLECTIONS</option>
+                </select>
+            </div>
         </section>
     </div>
 </div>
