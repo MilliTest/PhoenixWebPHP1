@@ -1,4 +1,4 @@
-@extend("Masters\\master.razr.php")
+@extend("Masters\\master-no-jumbotron.razr.php")
 
 @block('topblock')
 <div id="shop-filters-wrapper">
