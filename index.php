@@ -2,6 +2,8 @@
 use \Orion\v1\Web\Mvc\Modules\Classes;
 use \PhoenixWeb\Generic;
 
+session_start();
+
 ob_start();
 
 /* Load site configuation file... */
@@ -32,71 +34,71 @@ try {
 
     $BENCHMARK->set("end");
 
-    if(TRUE === $ROUTER->is_webservice()) {
+    //if(TRUE === $ROUTER->is_webservice()) {
 
-        switch($CONFIG->{"api_response_type"}) {
-            case "auto":
-                $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
-                switch ($extension) {
-                    case "xml":
-                        header('Content-Type: text/xml');
+    //    switch($CONFIG->{"api_response_type"}) {
+    //        case "auto":
+    //            $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
+    //            switch ($extension) {
+    //                case "xml":
+    //                    header('Content-Type: text/xml');
                         
-                        break;
-                    case "json":
-                        header('Content-Type: application/json');
-                        break;
-                    default:
-                    // TODO: Implement type not supported exception.
-                }
-                break;
-            case "xml":
-                header('Content-Type: text/xml');
+    //                    break;
+    //                case "json":
+    //                    header('Content-Type: application/json');
+    //                    break;
+    //                default:
+    //                // TODO: Implement type not supported exception.
+    //            }
+    //            break;
+    //        case "xml":
+    //            header('Content-Type: text/xml');
                 
-                break;
-            case "json":
-                header('Content-Type: application/json');
-                break;
-            default:
-            // TODO: Implement type not supported exception.
-        }
+    //            break;
+    //        case "json":
+    //            header('Content-Type: application/json');
+    //            break;
+    //        default:
+    //        // TODO: Implement type not supported exception.
+    //    }
 
-        $Response = new Generic\ApiResponse();
-        $Response->message = "";
-        $Response->code = 200;
-        $Response->success = TRUE;
-        $Response->status = "active";
-        $Response->description = "healthy";
+    //    $Response = new Generic\ApiResponse();
+    //    $Response->message = "";
+    //    $Response->code = 200;
+    //    $Response->success = TRUE;
+    //    $Response->status = "active";
+    //    $Response->description = "healthy";
 
-        $benchmark_results = $BENCHMARK->output_benchmark_suite_as_array();
-        if(FALSE !== $benchmark_results) {
-            $Response->markers = $benchmark_results;
-        }
+    //    $benchmark_results = $BENCHMARK->output_benchmark_suite_as_array();
+    //    if(FALSE !== $benchmark_results) {
+    //        $Response->markers = $benchmark_results;
+    //    }
 
-        switch($CONFIG->{"api_response_type"}) {
-            case "auto":
-                $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
-                switch ($extension) {
-                    case "xml":
-                        $XML = new Classes\XmlSerializer();
-                        echo $XML::generateValidXmlFromArray($Response->get_response_as_array(), "response", "marker");
-                        break;
-                    case "json":
-                        echo json_encode($Response);
-                        break;
-                }
-                break;
-            case "xml":
-                $XML = new Classes\XmlSerializer();
-                echo $XML::generateValidXmlFromArray($Response->get_response_as_array(), "response", "marker");
-                break;
-            case "json":
-                echo json_encode($Response);
-                break;
-        }
-    } else {
+    //    switch($CONFIG->{"api_response_type"}) {
+    //        case "auto":
+    //            $extension = mb_strtolower(substr($_SERVER['REQUEST_URI'], strrpos($_SERVER['REQUEST_URI'], ".") + 1));
+    //            switch ($extension) {
+    //                case "xml":
+    //                    $XML = new Classes\XmlSerializer();
+    //                    echo $XML::generateValidXmlFromArray($Response->get_response_as_array(), "response", "marker");
+    //                    break;
+    //                case "json":
+    //                    echo json_encode($Response);
+    //                    break;
+    //            }
+    //            break;
+    //        case "xml":
+    //            $XML = new Classes\XmlSerializer();
+    //            echo $XML::generateValidXmlFromArray($Response->get_response_as_array(), "response", "marker");
+    //            break;
+    //        case "json":
+    //            echo json_encode($Response);
+    //            break;
+    //    }
+    //} else {
         $CONTROLLER->{"Action" . $ROUTER->get_action()}();
         $BENCHMARK->output_benchmark_suite_as_html();
-    }
+    //}
 
     exit;
 } catch (\Exception $e) {
