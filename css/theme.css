@@ -89,6 +89,7 @@ a {
     position: absolute;
     background: #fff;
     top: 35px;
+    z-index: 1;
 }
 #page-header nav > ul > li:hover ul {
     display: block;
