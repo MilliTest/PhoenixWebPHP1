@@ -38,7 +38,7 @@ namespace PhoenixWeb\ViewModels\Shop {
                 "details"
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
-            $ViewData['cart'] = unserialize($_SESSION['cart']);
+            $ViewData['cart'] = (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) ? unserialize($_SESSION['cart']) : [];
             echo $this->razr->render('Templates\\Shop\\cart.razr.php', $ViewData);
         }
     

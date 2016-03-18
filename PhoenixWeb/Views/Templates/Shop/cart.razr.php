@@ -22,9 +22,15 @@
                 <th>Subtotal</th>
             </tr>
         </thead>
+        <tbody>
+            @if( !empty($cart) )
+
+            @else
+            <tr>
+                <td colspan="5">No items are currently in your cart.</td>
+            </tr>
+            @endif
+        </tbody>
     </table>
-    <pre>
-        @( print_r($cart) )
-    </pre>
 </section>
 @endblock
