@@ -24,7 +24,7 @@
         </thead>
     </table>
     <pre>
-        @( $cart )
+        @( print_r($cart) )
     </pre>
 </section>
 @endblock
