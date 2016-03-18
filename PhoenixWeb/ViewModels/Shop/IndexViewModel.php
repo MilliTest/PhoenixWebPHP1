@@ -36,7 +36,7 @@ namespace PhoenixWeb\ViewModels\Shop {
             ];
             $ViewData['products'] = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             foreach($ViewData['products'] as $product) {
-                $ViewData['categories'] = $product['category'];
+                $ViewData['categories'] = $product->category;
             }
             $ViewData['categories'] = array_unique($ViewData['categories']);
             echo $this->razr->render('Templates\\Shop\\index.razr.php', $ViewData);
