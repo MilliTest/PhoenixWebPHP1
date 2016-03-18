@@ -35,8 +35,13 @@ section h1 {
 }
 #section-details h1 {
     font-size: 28px;
+    letter-spacing: 1px;
 }
 #price {
     font-size: 20px;
     font-style: italic;
+}
+#section-details h1,
+#section-details p {
+    line-height: 1.2em;
 }

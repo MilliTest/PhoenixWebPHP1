@@ -17,7 +17,9 @@
     </div>
     <div class="details-block">
         <h1>@( $product.name )</h1>
-        <p>@( $product.price )</p>
+        <p id="price">@( $product.price )</p>
+        <p>Category: @( $product.category )</p>
+        <p>Collection: @( $product.collection )</p>
     </div>
 </section>
 @endblock
