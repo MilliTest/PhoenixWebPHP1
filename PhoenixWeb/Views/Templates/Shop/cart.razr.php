@@ -12,12 +12,15 @@
 
 @block('contentblock')
 <section id="section-details">
-    <table>
+    <table id="cart-table">
         <thead>
-            <th>Product Name</th>
-            <th>Unit Price</th>
-            <th>Quantity</th>
-            <th>Cost</th>
+            <tr>
+                <th>Thumbnail</th>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
         </thead>
     </table>
 </section>
