@@ -74,3 +74,16 @@ section h1 {
 #table-cart a[href="#"]:hover {
     text-decoration: underline;
 }
+#section-details div {
+    padding: 15px 0;
+    position: relative;
+}
+#section-details button[type="button"] {
+    position: absolute;
+    right: 0;
+    border: 1px solid #9f0808;
+    background: #9f0808;
+    padding: 10px 15px;
+    color: #fff;
+    text-align: center;
+}
