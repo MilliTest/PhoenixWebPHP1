@@ -11,7 +11,12 @@
 @endblock
 
 @block('contentblock')
-<section id="section-shop">
+<section id="section-details">
+    <div class="details-block">
 
+    </div>
+    <div class="details-block">
+
+    </div>
 </section>
 @endblock

@@ -18,3 +18,11 @@ section h1 {
     font-size: 20px;
     font-weight: 600;
 }
+.details-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+#section-details > div:first-of-type {
+    margin: 0;
+}
