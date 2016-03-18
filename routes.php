@@ -56,6 +56,11 @@ $routes['/shop/details/(:num)'] = [
     "action"      => "Details",
     "webservice"  => false
 ];
+$routes['/shop/cart'] = [
+    "controller"  => "Shop",
+    "action"      => "Cart",
+    "webservice"  => false
+];
 $routes['/webservices/add'] = [
     "controller"  => "WebApi",
     "action"      => "Add",
