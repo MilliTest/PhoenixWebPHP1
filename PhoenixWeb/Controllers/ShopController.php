@@ -29,12 +29,11 @@ namespace PhoenixWeb\Controllers {
         }
 
         public function ActionIndex() {
-            //$this->ViewModel = new \PhoenixWeb\ViewModels\Shop\IndexViewModel(
-            //        $this->Config,
-            //        $this->Log
-            //    );
-            //$this->ViewModel->render();
-            echo "Ready.";
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\IndexViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
         }
     }
 
