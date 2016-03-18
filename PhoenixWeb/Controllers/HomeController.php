@@ -36,7 +36,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
-    
+
+        public function ActionContact() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Home\ContactViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }
