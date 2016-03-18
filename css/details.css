@@ -27,12 +27,9 @@ section h1 {
     margin: 0;
     width: 800px;
 }
-#section-details > div {
-    height: 400px;
-}
 #section-details > div:last-of-type {
     width: 400px;
 }
 #section-details img {
-    width: 600px;
+    width: 500px;
 }
