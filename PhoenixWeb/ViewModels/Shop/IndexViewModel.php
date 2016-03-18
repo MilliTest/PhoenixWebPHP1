@@ -34,6 +34,9 @@ namespace PhoenixWeb\ViewModels\Shop {
                 "index",
                 "shop"
             ];
+            $ViewData['javascript'] = [
+                "shop"    
+            ];
             $ViewData['products'] = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             foreach($ViewData['products'] as $product) {
                 $ViewData['categories'][] = $product->category;
