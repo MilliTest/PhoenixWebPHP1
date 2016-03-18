@@ -1,9 +1,16 @@
 @extend("Masters\\master.razr.php")
 
+@block('topblock')
+<div id="shop-filters-wrapper">
+    <div class="container">
+        <section id="section-filters">
+            <h1>Everything</h1>
+        </section>
+    </div>
+</div>
+@endblock
+
 @block('contentblock')
-<section id="section-filters">
-    <h1>Everything</h1>
-</section>
 <section id="section-shop">
     <ul>
         @foreach($products as $product)

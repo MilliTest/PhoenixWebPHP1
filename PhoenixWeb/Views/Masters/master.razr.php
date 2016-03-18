@@ -40,10 +40,14 @@
 
     </div>
     <main id="page-content">
+        @block('topblock')
+        @endblock
         <div class="container">
             @block('contentblock')
             @endblock
         </div>
+        @block('bottomblock')
+        @endblock
     </main>
     <footer id="page-footer">
         <div class="container">
