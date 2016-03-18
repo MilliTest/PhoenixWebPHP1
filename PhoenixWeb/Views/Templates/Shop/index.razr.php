@@ -14,6 +14,9 @@
                 </select>
                 <select>
                     <option value="">COLLECTIONS</option>
+                    @foreach( $collections as $collection )
+                        <option value="@( $collection )">@( $collection )<sup>&reg;</sup></option>
+                    @endforeach
                 </select>
             </div>
         </section>

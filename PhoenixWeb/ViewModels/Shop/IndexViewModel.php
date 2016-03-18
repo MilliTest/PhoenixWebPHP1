@@ -39,6 +39,10 @@ namespace PhoenixWeb\ViewModels\Shop {
                 $ViewData['categories'][] = $product->category;
             }
             $ViewData['categories'] = array_unique($ViewData['categories']);
+            foreach($ViewData['products'] as $product) {
+                $ViewData['collection'][] = $product->category;
+            }
+            $ViewData['collection'] = array_unique($ViewData['collection']);
             echo $this->razr->render('Templates\\Shop\\index.razr.php', $ViewData);
         }
     
