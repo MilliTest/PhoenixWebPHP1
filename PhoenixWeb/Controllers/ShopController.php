@@ -64,6 +64,14 @@ namespace PhoenixWeb\Controllers {
                 );
             $this->ViewModel->render();
         }
+
+        public function ActionCart() {
+            $this->ViewModel = new \PhoenixWeb\ViewModels\Shop\CartViewModel(
+                    $this->Config,
+                    $this->Log
+                );
+            $this->ViewModel->render();
+        }
     }
 
 }

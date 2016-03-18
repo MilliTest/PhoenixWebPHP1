@@ -1,0 +1,79 @@
+#shop-filters-wrapper {
+    background: #fcfbe3;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    position: relative;
+}
+#section-filters {
+    position: relative;
+}
+#section-filters h1 {
+    text-transform: capitalize;
+}
+section {
+    padding: 20px 0;
+    margin: 7px 0;
+}
+section h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.details-block {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -4px;
+}
+#section-details > div:first-of-type {
+    margin: 0;
+    width: 800px;
+}
+#section-details > div:last-of-type {
+    width: 400px;
+}
+#section-details img {
+    width: 500px;
+}
+#section-details h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+#price {
+    font-size: 20px;
+    font-style: italic;
+}
+#section-details h1,
+#section-details p {
+    line-height: 1.2em;
+    padding: 5px 0;
+}
+#section-details p:nth-of-type(2) {
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+#form-add-to-cart {
+    margin-top: 50px;
+}
+#form-add-to-cart label {
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#form-add-to-cart input[type="text"] {
+    margin-left: 15px;
+    padding: 5px 7px;
+    width: 22px;
+    text-align: center;
+    font-weight: 400;
+}
+#form-add-to-cart button[type="submit"] {
+    width: 150px;
+    margin: 0;
+    border: 1px solid #9f0808;
+    background: #9f0808;
+    color: #fff;
+    padding: 9px 10px;
+    position: relative;
+    top: -1px;
+    left: 164px;
+    cursor: pointer;
+}
