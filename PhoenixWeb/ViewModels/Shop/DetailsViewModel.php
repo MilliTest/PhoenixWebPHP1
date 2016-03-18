@@ -38,6 +38,13 @@ namespace PhoenixWeb\ViewModels\Shop {
             $ViewData['javascript'] = [
                 "jquery"
             ];
+            $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
+            foreach($products as $product) {
+                if($product->id === intval($id, 10)) {
+                    $ViewData['product'] = $product;
+                    break;
+                }
+            }
             echo $this->razr->render('Templates\\Shop\\details.razr.php', $ViewData);
         }
     

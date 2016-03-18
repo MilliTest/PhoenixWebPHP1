@@ -25,4 +25,11 @@ section h1 {
 }
 #section-details > div:first-of-type {
     margin: 0;
+    width: 800px;
+}
+#section-details > div {
+    height: 400px;
+}
+#section-details > div:last-of-type {
+    width: 400px;
 }

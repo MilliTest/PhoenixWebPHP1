@@ -16,7 +16,7 @@
 
     </div>
     <div class="details-block">
-
+        <h1>@( $product.name )</h1>
     </div>
 </section>
 @endblock
