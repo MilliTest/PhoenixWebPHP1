@@ -23,6 +23,7 @@ namespace PhoenixWeb\Controllers {
 
         public function __construct(Config $Config, Log $Log) {
             parent::__construct($Config, $Log);
+            header('Content-Type: application/json');
         }
         
         public function __destruct() {
