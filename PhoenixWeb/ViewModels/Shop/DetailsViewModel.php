@@ -40,7 +40,7 @@ namespace PhoenixWeb\ViewModels\Shop {
                 "jquery",
                 "shop"    
             ];
-            echo $this->razr->render('Templates\\Shop\\index.razr.php', $ViewData);
+            echo $this->razr->render('Templates\\Shop\\details.razr.php', $ViewData);
         }
     
     }
