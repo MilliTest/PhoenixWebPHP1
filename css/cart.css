@@ -65,6 +65,11 @@ section h1 {
 #table-cart a[href="#"] {
     color: #9f0808;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
 }
 #table-cart a[href="#"]:hover {
     text-decoration: underline;
