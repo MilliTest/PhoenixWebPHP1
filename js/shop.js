@@ -3,12 +3,16 @@
     $('#section-filters div').on('change', 'select', function (evt) {
         var value = $(this).val(),
             fragment = "";
-        if ($(this).attr('id') === "dd-category") {
-            fragment = ("categories").toLowerCase();
+        if (value === "") {
+            window.location = "/shop";
         } else {
-            fragment = ("collections").toLowerCase();
+            if ($(this).attr('id') === "dd-category") {
+                fragment = ("categories").toLowerCase();
+            } else {
+                fragment = ("collections").toLowerCase();
+            }
+            window.location = "/shop/" + fragment + "/" + (value).replace(' ', '-');
         }
-        window.location = "/shop/" + fragment + "/" + (value).replace(' ', '-');
     });
 
 }(window, undefined, jQuery));
