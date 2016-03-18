@@ -39,6 +39,15 @@ namespace PhoenixWeb\ViewModels\Shop {
             ];
             $products = json_decode(file_get_contents(__DIR__ . "\\..\\..\\Data\\products.json"));
             $ViewData['cart'] = (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) ? unserialize($_SESSION['cart']) : [];
+            foreach($ViewData['cart'] as &$item) {
+                foreach($products as $product) {
+                    if($item['id'] === $product->id) {
+                        $item['name'] = $product->name;
+                        $item['price'] = $product->thumbnail;
+                        $item['price'] = $product->price;
+                    }
+                }
+            }
             echo $this->razr->render('Templates\\Shop\\cart.razr.php', $ViewData);
         }
     

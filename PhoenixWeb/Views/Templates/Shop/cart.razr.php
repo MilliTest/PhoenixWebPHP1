@@ -24,13 +24,26 @@
         </thead>
         <tbody>
             @if( !empty($cart) )
-            <tr>
-                <td colspan="5">
-                    <pre>
-                        @( print_r($cart) )
-                    </pre>
-                </td>
-            </tr>
+                @foreach($cart as $item)
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        @( $item.name )
+                    </td>
+                    <td>
+                        $ @( $item.price )
+                    </td>
+                    <td>
+                        <input type="text" name="qty" update="qty" value="@( $item.qty )" />
+                        <a href="#" class="update-btn">Update</a>
+                    </td>
+                    <td>
+                        $ @( number_format($item.price * $item.qty, 2) )
+                    </td>
+                </tr>
+                @endforeach
             @else
             <tr>
                 <td colspan="5">No items are currently in your cart.</td>
