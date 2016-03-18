@@ -29,7 +29,18 @@ namespace PhoenixWeb\ViewModels\Shop {
 
         public function render() {
             $uri =  $_SERVER['REQUEST_URI'];
-            $ViewData['search'] = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
+            $temp = mb_str_replace("-", " ", substr($uri, strrpos($uri, "/") + 1));
+            switch(mb_strtolower($temp)) {
+                case "wildernessone":
+                    $ViewData['search' ] = "WildernessOne";
+                    break;
+                case "geotrak":
+                    $ViewData['search' ] = "GeoTrak";
+                    break;
+                case "oceanx":
+                    $ViewData['search' ] = "OceanX";
+                    break;
+            }
             $ViewData['title'] = "Shop | Peak Outdoor Adventure";
             $ViewData['copyright'] = date("Y");
             $ViewData['stylesheets'] = [
