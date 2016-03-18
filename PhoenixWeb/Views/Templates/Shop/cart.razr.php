@@ -23,5 +23,8 @@
             </tr>
         </thead>
     </table>
+    <pre>
+        @( $cart )
+    </pre>
 </section>
 @endblock
